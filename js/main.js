@@ -3,6 +3,22 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Header que acompanha a rolagem (Sticky / Fixed com Glass Transparente)
+  const mainHeader = document.getElementById('mainHeader');
+  if (mainHeader) {
+    const handleHeaderScroll = () => {
+      if (window.scrollY > 30) {
+        mainHeader.classList.add('bg-[#1E1917]/75', 'backdrop-blur-md', 'py-3.5', 'border-b', 'border-white/10', 'shadow-xl');
+        mainHeader.classList.remove('py-6', 'sm:py-7', 'bg-transparent', 'border-0');
+      } else {
+        mainHeader.classList.remove('bg-[#1E1917]/75', 'backdrop-blur-md', 'py-3.5', 'border-b', 'border-white/10', 'shadow-xl');
+        mainHeader.classList.add('py-6', 'sm:py-7', 'bg-transparent', 'border-0');
+      }
+    };
+    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+    handleHeaderScroll();
+  }
+
   // 1. Menu Mobile
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
