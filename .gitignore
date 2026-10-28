@@ -1,0 +1,14 @@
+# Vercel
+.vercel
+
+# Temp scripts & Backups
+*.py
+*.log
+_backup_projeto_anterior/
+assets_fabiola/
+assets_novo_site/
+relatorio*.pdf
+
+# OS
+.DS_Store
+Thumbs.db

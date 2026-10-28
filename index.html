@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabíola Goes Arquiteta | Regularização de Imóveis e Licenciamento de Obras em Belém - PA</title>
+  <meta name="description" content="Especialista em regularização de imóveis, aprovação de projetos na Prefeitura e licenciamento urbano em Belém e Região Metropolitana. Apoio técnico para empresas e escritórios de todo o Brasil. CAU/BR A64582-6." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-fabiola-circle.png" />
+  <link rel="apple-touch-icon" href="assets/logo-fabiola-circle.png" />
+
+  <!-- Google Fonts: Red Hat Display Oficial -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            fg: {
+              brown: '#64513D',
+              brownDark: '#4E3E2E',
+              sand: '#DAD3C7',
+              sandLight: '#FAF8F5',
+              moss: '#5E692E',
+              mossDark: '#4A5324',
+              terracotta: '#9D5E39',
+              dark: '#1E1917',
+              darkCard: '#272220',
+              darkBorder: '#3D3632',
+              gold: '#D89C17'
+            }
+          },
+          fontFamily: {
+            sans: ['"Red Hat Display"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#FAF8F5] text-[#1E1917] antialiased selection:bg-[#64513D] selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#1E1917] text-[#DAD3C7] text-xs py-2 px-4 border-b border-[#3D3632] flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-[#5E692E] animate-pulse"></span>
+    <span>Apoio Técnico Local em <strong>Belém e Região Metropolitana</strong> para Empresas e Escritórios de todo o Brasil</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#64513D]/15 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <img src="assets/logo-fabiola-circle.png" alt="Logo Fabíola Góes Arquiteta" class="w-11 h-11 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform border border-[#64513D]/20" />
+        <div>
+          <span class="block text-lg font-bold tracking-[0.16em] text-[#1E1917] uppercase leading-none">Fabíola Goes</span>
+          <span class="block text-[10px] tracking-[0.28em] text-[#64513D] uppercase font-semibold mt-1">Arquiteta · CAU A64582-6</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-stone-700">
+        <a href="#inicio" class="hover:text-[#64513D] transition-colors">Início</a>
+        <a href="#para-empresas" class="hover:text-[#64513D] transition-colors flex items-center gap-1 font-semibold text-[#64513D]">
+          <span>Para Empresas</span>
+          <span class="text-[10px] bg-[#64513D] text-[#DAD3C7] px-2 py-0.5 rounded-full font-bold">B2B</span>
+        </a>
+        <a href="#servicos" class="hover:text-[#64513D] transition-colors">Serviços</a>
+        <a href="#autoridade" class="hover:text-[#64513D] transition-colors">Autoridade</a>
+        <a href="#casos" class="hover:text-[#64513D] transition-colors">Casos Reais</a>
+        <a href="#regularizacao" class="hover:text-[#64513D] transition-colors flex items-center gap-1">
+          <span>Diagnóstico</span>
+          <span class="text-[10px] bg-[#5E692E]/20 text-[#5E692E] px-1.5 py-0.5 rounded font-bold">Quiz</span>
+        </a>
+        <a href="#contato" class="hover:text-[#64513D] transition-colors">Contato</a>
+      </nav>
+
+      <!-- Right Action CTA Button -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="#para-empresas" 
+           class="inline-flex items-center gap-2 bg-[#64513D] text-[#FAF8F5] px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4E3E2E] transition-all shadow-md group">
+          <span>Solicitar Proposta</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4 text-[#DAD3C7] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" aria-label="Abrir Menu" class="lg:hidden p-2 text-stone-800 hover:text-black">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Menu -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-[#1E1917] text-[#FAF8F5] hidden flex-col p-6 overflow-y-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-[#3D3632]">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo-fabiola-circle.png" alt="Logo Fabíola Góes" class="w-9 h-9 rounded-full object-cover" />
+        <div>
+          <span class="font-bold tracking-widest text-sm uppercase block">Fabíola Goes</span>
+          <span class="text-[10px] text-[#DAD3C7] tracking-wider block">Arquiteta e Urbanista</span>
+        </div>
+      </div>
+      <button id="mobileMenuClose" class="p-2 text-stone-400 hover:text-white">
+        <i data-lucide="x" class="w-7 h-7"></i>
+      </button>
+    </div>
+    <div class="flex flex-col space-y-5 text-xl font-medium mt-8">
+      <a href="#inicio" class="mobile-nav-link hover:text-[#DAD3C7] transition-colors">Início</a>
+      <a href="#para-empresas" class="mobile-nav-link text-[#D89C17] font-semibold flex items-center justify-between">
+        <span>Para Empresas de Outros Estados</span>
+        <span class="text-xs bg-[#64513D] text-[#FAF8F5] px-2 py-0.5 rounded-full">B2B</span>
+      </a>
+      <a href="#servicos" class="mobile-nav-link hover:text-[#DAD3C7] transition-colors">Serviços Técnicos</a>
+      <a href="#autoridade" class="mobile-nav-link hover:text-[#DAD3C7] transition-colors">Minha Autoridade (Prefeitura + Ensino)</a>
+      <a href="#casos" class="mobile-nav-link hover:text-[#DAD3C7] transition-colors">Casos Reais & Antes/Depois</a>
+      <a href="#regularizacao" class="mobile-nav-link hover:text-[#DAD3C7] transition-colors flex items-center justify-between">
+        <span>Diagnóstico de Regularização</span>
+        <span class="text-xs bg-[#5E692E] text-white px-2 py-0.5 rounded-full">Quiz 1 min</span>
+      </a>
+      <a href="#contato" class="mobile-nav-link hover:text-[#DAD3C7] transition-colors">Contato & Escritório</a>
+    </div>
+    <div class="mt-auto pt-8 border-t border-[#3D3632] flex flex-col gap-3">
+      <a href="https://wa.me/5591982324820" target="_blank" class="w-full bg-[#25D366] text-white py-3.5 rounded-full text-center font-bold flex items-center justify-center gap-2 shadow-lg">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span>WhatsApp: (91) 98232-4820</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 1. HERO SECTION (Duas Rotas Estratégicas: B2B Fora + Belém) -->
+  <!-- ============================================================== -->
+  <section id="inicio" class="relative bg-[#1E1917] text-[#FAF8F5] min-h-[92vh] flex flex-col justify-between overflow-hidden">
+    <!-- Background Image with Dark Vignette Overlay -->
+    <div class="absolute inset-0 z-0 opacity-25">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" 
+           alt="Arquitetura e Regularização em Belém" 
+           class="w-full h-full object-cover object-center scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#1E1917] via-[#1E1917]/85 to-[#1E1917]/70"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 flex-1 flex flex-col justify-center">
+      <div class="max-w-4xl">
+        
+        <!-- Tagline Oficial -->
+        <div class="inline-flex items-center gap-2 mb-6 border border-[#64513D]/60 bg-[#272220]/80 px-4 py-1.5 rounded-full backdrop-blur-md">
+          <span class="w-2 h-2 rounded-full bg-[#5E692E]"></span>
+          <span class="text-xs uppercase tracking-[0.24em] text-[#DAD3C7] font-semibold">
+            REGULARIZAÇÃO DE IMÓVEIS · LICENCIAMENTO URBANO · BELÉM - PA
+          </span>
+        </div>
+
+        <!-- Headline Principal -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] mb-6">
+          Experiência técnica para transformar processos complexos em <span class="text-[#DAD3C7] font-normal">caminhos claros e seguros.</span>
+        </h1>
+
+        <p class="text-lg sm:text-xl text-[#DAD3C7] font-light max-w-2xl mb-12 leading-relaxed">
+          Seu apoio técnico local para viabilizar obras, aprovação de projetos, alvarás e regularizações perante a Prefeitura de Belém (SEURB) e órgãos competentes.
+        </p>
+
+        <!-- AS DUAS ROTAS DE CONTRATAÇÃO (Slide 19 do PPTX) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+          
+          <!-- Rota 1: Empresas de Fora (Prioridade Comercial) -->
+          <a href="#para-empresas" class="group p-6 rounded-2xl bg-[#272220] border-2 border-[#64513D] hover:border-[#DAD3C7] transition-all shadow-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="w-9 h-9 rounded-xl bg-[#64513D] text-[#DAD3C7] flex items-center justify-center font-bold text-sm">
+                  <i data-lucide="building-2" class="w-5 h-5"></i>
+                </span>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#D89C17] bg-[#D89C17]/10 px-2.5 py-1 rounded-full">Atendimento B2B</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#DAD3C7] transition-colors">Sou empresa ou escritório de outro estado</h3>
+              <p class="text-xs text-[#DAD3C7]/90 leading-relaxed">
+                Preciso de apoio técnico local para uma obra, franquia, expansão ou imóvel em Belém e Região Metropolitana.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-[#3D3632] flex items-center justify-between text-xs font-bold text-[#DAD3C7] group-hover:text-white">
+              <span>Conhecer atendimento empresarial</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-[#D89C17] group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </a>
+
+          <!-- Rota 2: Clientes e Proprietários de Belém -->
+          <a href="#servicos" class="group p-6 rounded-2xl bg-[#272220]/70 border border-[#3D3632] hover:border-[#64513D] transition-all shadow-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="w-9 h-9 rounded-xl bg-[#3D3632] text-[#DAD3C7] flex items-center justify-center font-bold text-sm">
+                  <i data-lucide="home" class="w-5 h-5"></i>
+                </span>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#5E692E] bg-[#5E692E]/20 px-2.5 py-1 rounded-full">Demanda Local</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#DAD3C7] transition-colors">Sou de Belém ou Região Metropolitana</h3>
+              <p class="text-xs text-stone-300 leading-relaxed">
+                Preciso aprovar um projeto, regularizar meu imóvel, obter Habite-se, Alvará ou resolver um embargo de obra.
+              </p>
+            </div>
+            <div class="mt-5 pt-3 border-t border-[#3D3632] flex items-center justify-between text-xs font-bold text-stone-300 group-hover:text-white">
+              <span>Conhecer os serviços técnicos</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-[#DAD3C7] group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Stat Badges: A Tríade de Autoridade -->
+    <div class="relative z-10 border-t border-[#3D3632] bg-[#14100E]/90 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-[#DAD3C7]">
+          
+          <div class="border-l-2 border-[#64513D] pl-4">
+            <div class="text-lg font-bold text-white mb-0.5">16+ Anos</div>
+            <div class="text-xs font-semibold text-[#DAD3C7]">Setor Público (SEURB)</div>
+            <div class="text-[11px] text-stone-400">Análise de Projetos Legais</div>
+          </div>
+
+          <div class="border-l-2 border-[#5E692E] pl-4">
+            <div class="text-lg font-bold text-white mb-0.5">Pós-Graduação</div>
+            <div class="text-xs font-semibold text-[#DAD3C7]">Professora Universitária</div>
+            <div class="text-[11px] text-stone-400">Licenciamento e Aprovação</div>
+          </div>
+
+          <div class="border-l-2 border-[#9D5E39] pl-4">
+            <div class="text-lg font-bold text-white mb-0.5">CAU/BR A64582-6</div>
+            <div class="text-xs font-semibold text-[#DAD3C7]">Arquiteta e Urbanista</div>
+            <div class="text-[11px] text-stone-400">FAU / UFPA Formação</div>
+          </div>
+
+          <div class="border-l-2 border-[#D89C17] pl-4">
+            <div class="text-lg font-bold text-white mb-0.5">Apoio Nacional</div>
+            <div class="text-xs font-semibold text-[#DAD3C7]">Para Empresas de Fora</div>
+            <div class="text-[11px] text-stone-400">Atuação presencial em Belém</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 2. PARA EMPRESAS DE OUTROS ESTADOS (Slide 15 e 22 do PPTX) -->
+  <!-- ============================================================== -->
+  <section id="para-empresas" class="scroll-mt-20 py-24 bg-[#FAF8F5] border-b border-[#64513D]/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Copy Estratégico B2B -->
+        <div class="lg:col-span-5 sticky top-28">
+          <div class="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full badge-brown text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+            <span>Atendimento Corporativo & B2B</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E1917] leading-tight mb-6">
+            Sua equipe está em outro estado. Sua obra está em Belém.
+          </h2>
+
+          <p class="text-stone-700 text-base leading-relaxed mb-6">
+            Tenha um escritório de arquitetura local para apoiar a análise documental, o desenvolvimento dos projetos legais e os procedimentos de licenciamento e regularização necessários à sua demanda.
+          </p>
+
+          <p class="text-sm text-stone-600 leading-relaxed mb-8 border-l-2 border-[#64513D] pl-4 italic">
+            "Você mantém sua equipe principal onde ela está e contrata o suporte técnico local conforme a necessidade de cada projeto, sem precisar deslocar equipes."
+          </p>
+
+          <!-- 3 Situações que o cliente reconhece (Slide 15) -->
+          <div class="space-y-4 mb-8">
+            <div class="p-4 rounded-xl bg-white border border-[#64513D]/15 shadow-sm">
+              <div class="font-bold text-sm text-[#1E1917] flex items-center gap-2 mb-1">
+                <span class="w-6 h-6 rounded-full bg-[#64513D]/10 text-[#64513D] flex items-center justify-center text-xs">1</span>
+                <span>Implantação de Unidades & Franquias</span>
+              </div>
+              <p class="text-xs text-stone-600">Sua empresa vai abrir, reformar ou implantar uma loja/filial em Belém.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-[#64513D]/15 shadow-sm">
+              <div class="font-bold text-sm text-[#1E1917] flex items-center gap-2 mb-1">
+                <span class="w-6 h-6 rounded-full bg-[#64513D]/10 text-[#64513D] flex items-center justify-center text-xs">2</span>
+                <span>Parceria com Escritórios de Outros Estados</span>
+              </div>
+              <p class="text-xs text-stone-600">Seu escritório foi contratado para um projeto na cidade, mas precisa de suporte para as normas da SEURB.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-[#64513D]/15 shadow-sm">
+              <div class="font-bold text-sm text-[#1E1917] flex items-center gap-2 mb-1">
+                <span class="w-6 h-6 rounded-full bg-[#64513D]/10 text-[#64513D] flex items-center justify-center text-xs">3</span>
+                <span>Auditoria e Regularização de Ativos</span>
+              </div>
+              <p class="text-xs text-stone-600">Você administra um imóvel ou galpão cuja documentação precisa ser verificada ou averbada.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Formulário de Avaliação Técnica Inicial B2B (Slide 22 do PPTX) -->
+        <div class="lg:col-span-7">
+          <div class="bg-[#1E1917] text-[#FAF8F5] p-8 sm:p-10 rounded-3xl border border-[#3D3632] shadow-2xl">
+            
+            <div class="border-b border-[#3D3632] pb-6 mb-6">
+              <span class="text-xs font-bold uppercase tracking-widest text-[#D89C17] block mb-1">SOLICITE UMA AVALIAÇÃO TÉCNICA</span>
+              <h3 class="text-2xl font-bold text-white">Canal Direto para Empresas e Escritórios</h3>
+              <p class="text-xs text-[#DAD3C7] mt-1">Preencha os dados preliminares da sua demanda em Belém para receber contato qualificado.</p>
+            </div>
+
+            <form id="b2bEvaluationForm" class="space-y-6">
+              
+              <!-- Nome -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-[#DAD3C7] mb-2">Seu Nome e Sobrenome *</label>
+                <input type="text" id="b2bNome" required placeholder="Ex: Roberto Silva" class="w-full p-3.5 rounded-xl bg-[#272220] border border-[#3D3632] text-white text-sm focus:border-[#64513D] focus:outline-none" />
+              </div>
+
+              <!-- Empresa & Origem -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider font-bold text-[#DAD3C7] mb-2">Empresa ou Escritório *</label>
+                  <input type="text" id="b2bEmpresa" required placeholder="Nome da empresa / filial" class="w-full p-3.5 rounded-xl bg-[#272220] border border-[#3D3632] text-white text-sm focus:border-[#64513D] focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider font-bold text-[#DAD3C7] mb-2">Cidade e Estado de Origem *</label>
+                  <input type="text" id="b2bOrigem" required placeholder="Ex: São Paulo – SP" class="w-full p-3.5 rounded-xl bg-[#272220] border border-[#3D3632] text-white text-sm focus:border-[#64513D] focus:outline-none" />
+                </div>
+              </div>
+
+              <!-- Demanda -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-[#DAD3C7] mb-2">Qual é a sua demanda técnica principal? *</label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer hover:border-[#64513D]">
+                    <input type="radio" name="b2bDemanda" value="Licenciamento de Obra" checked class="accent-[#64513D]" />
+                    <span>Licenciamento de obra</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer hover:border-[#64513D]">
+                    <input type="radio" name="b2bDemanda" value="Aprovação de Projeto na Prefeitura" class="accent-[#64513D]" />
+                    <span>Aprovação de projeto</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer hover:border-[#64513D]">
+                    <input type="radio" name="b2bDemanda" value="Regularização de Imóvel" class="accent-[#64513D]" />
+                    <span>Regularização de imóvel</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer hover:border-[#64513D]">
+                    <input type="radio" name="b2bDemanda" value="Alvará de Obra ou Habite-se" class="accent-[#64513D]" />
+                    <span>Alvará de Obra ou Habite-se</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer hover:border-[#64513D]">
+                    <input type="radio" name="b2bDemanda" value="Desembargo de Obra" class="accent-[#64513D]" />
+                    <span>Desembargo de obra</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer hover:border-[#64513D]">
+                    <input type="radio" name="b2bDemanda" value="Outra Demanda Técnica" class="accent-[#64513D]" />
+                    <span>Outra demanda técnica</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Situação do Projeto -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-[#DAD3C7] mb-2">Em que situação está o projeto? *</label>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer">
+                    <input type="radio" name="b2bSituacao" value="Ainda em planejamento" checked class="accent-[#64513D]" />
+                    <span>Ainda em planejamento</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer">
+                    <input type="radio" name="b2bSituacao" value="Projeto em desenvolvimento" class="accent-[#64513D]" />
+                    <span>Projeto em desenvolvimento</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer">
+                    <input type="radio" name="b2bSituacao" value="Imóvel ou obra existente" class="accent-[#64513D]" />
+                    <span>Imóvel ou obra existente</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer">
+                    <input type="radio" name="b2bSituacao" value="Processo já iniciado na Prefeitura" class="accent-[#64513D]" />
+                    <span>Processo já iniciado</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Urgência / Prazo -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-[#DAD3C7] mb-2">Quando precisa de apoio técnico? *</label>
+                <div class="grid grid-cols-3 gap-2 text-xs">
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer">
+                    <input type="radio" name="b2bPrazo" value="Em planejamento" class="accent-[#64513D]" />
+                    <span>Planejamento</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer">
+                    <input type="radio" name="b2bPrazo" value="Próximos 30 dias" checked class="accent-[#64513D]" />
+                    <span>Próximos 30 dias</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 rounded-lg bg-[#272220] border border-[#3D3632] cursor-pointer">
+                    <input type="radio" name="b2bPrazo" value="Com urgência" class="accent-[#64513D]" />
+                    <span>Com urgência</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Telefone / WhatsApp -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-[#DAD3C7] mb-2">Seu WhatsApp / Telefone Direto *</label>
+                <input type="tel" id="b2bTelefone" required placeholder="(DDD) 99999-9999" class="w-full p-3.5 rounded-xl bg-[#272220] border border-[#3D3632] text-white text-sm focus:border-[#64513D] focus:outline-none" />
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="w-full bg-[#64513D] text-white py-4 rounded-xl font-bold text-sm uppercase tracking-wider hover:bg-[#4E3E2E] transition-all flex items-center justify-center gap-2 shadow-lg">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Enviar Solicitação de Avaliação Técnica</span>
+              </button>
+
+              <div class="text-[11px] text-[#DAD3C7]/70 text-center">
+                Atendimento confidencial e direto com a Arquiteta Fabíola Góes (CAU A64582-6).
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 3. SERVIÇOS TÉCNICOS (Slide 16 do PPTX) -->
+  <!-- ============================================================== -->
+  <section id="servicos" class="scroll-mt-20 py-24 bg-white border-b border-[#64513D]/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-16">
+        <div class="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full badge-moss text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+          <span>O que resolvemos com precisão</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1E1917] leading-tight mb-4">
+          Serviços especializados em licenciamento e regularização em Belém.
+        </h2>
+        <p class="text-stone-600 text-base leading-relaxed">
+          Atuação técnica voltada para proprietários, empresas e construtoras que precisam transformar projetos em processos corretamente aprovados perante a Prefeitura e órgãos municipais.
+        </p>
+      </div>
+
+      <!-- Grid de Serviços Especializados -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Serviço 1: Licenciamento de Obras -->
+        <div class="p-8 rounded-2xl bg-[#FAF8F5] border border-[#64513D]/20 hover:border-[#64513D] transition-all shadow-sm flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#64513D] text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+              <i data-lucide="file-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E1917] mb-2 group-hover:text-[#64513D] transition-colors">Licenciamento de obras em Belém</h3>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Para empresas, construtoras e escritórios que precisam verificar exigências, adequar projetos legais e conduzir os procedimentos de aprovação junto à SEURB.
+            </p>
+          </div>
+          <ul class="text-xs text-stone-600 space-y-1.5 border-t border-[#64513D]/10 pt-4">
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Alvarás de Construção e Reforma</li>
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Licença de Acréscimo e Demolição</li>
+          </ul>
+        </div>
+
+        <!-- Serviço 2: Aprovação de Projetos na Prefeitura -->
+        <div class="p-8 rounded-2xl bg-[#FAF8F5] border border-[#64513D]/20 hover:border-[#64513D] transition-all shadow-sm flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#5E692E] text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+              <i data-lucide="landmark" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E1917] mb-2 group-hover:text-[#5E692E] transition-colors">Aprovação de projetos na Prefeitura</h3>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Formatação rigorosa do Projeto Arquitetônico Legal segundo o Plano Diretor e Código de Obras de Belém, eliminando indeferimentos desnecessários.
+            </p>
+          </div>
+          <ul class="text-xs text-stone-600 space-y-1.5 border-t border-[#64513D]/10 pt-4">
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Análise de Conformidade Urbanística</li>
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Atendimento a Notificações SEURB</li>
+          </ul>
+        </div>
+
+        <!-- Serviço 3: Regularização de Imóveis -->
+        <div class="p-8 rounded-2xl bg-[#FAF8F5] border border-[#64513D]/20 hover:border-[#64513D] transition-all shadow-sm flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#9D5E39] text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+              <i data-lucide="building" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E1917] mb-2 group-hover:text-[#9D5E39] transition-colors">Regularização de imóveis e cartório</h3>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Para edificações com pendências documentais que precisam de análise de conformidade, habite-se e averbação na matrícula para venda ou financiamento.
+            </p>
+          </div>
+          <ul class="text-xs text-stone-600 space-y-1.5 border-t border-[#64513D]/10 pt-4">
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Emissão de Habite-se</li>
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Averbação de Construção e Usucapião</li>
+          </ul>
+        </div>
+
+        <!-- Serviço 4: Desembargo de Obras -->
+        <div class="p-8 rounded-2xl bg-[#FAF8F5] border border-[#64513D]/20 hover:border-[#64513D] transition-all shadow-sm flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#1E1917] text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E1917] mb-2 group-hover:text-[#64513D] transition-colors">Regularização de obra embargada</h3>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Para proprietários e empresas que precisam entender as causas do embargo, solucionar pendências técnicas e protocolar a defesa administrativa cabível.
+            </p>
+          </div>
+          <ul class="text-xs text-stone-600 space-y-1.5 border-t border-[#64513D]/10 pt-4">
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Análise do Auto de Infração</li>
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Adequação e Desembargo Rápido</li>
+          </ul>
+        </div>
+
+        <!-- Serviço 5: Remembramento e Unificação -->
+        <div class="p-8 rounded-2xl bg-[#FAF8F5] border border-[#64513D]/20 hover:border-[#64513D] transition-all shadow-sm flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#64513D] text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+              <i data-lucide="split" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E1917] mb-2 group-hover:text-[#64513D] transition-colors">Remembramento e desdobro de terrenos</h3>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Unificação de lotes para empreendimentos comerciais ou desmembramento de terrenos urbanos de acordo com a legislação de uso do solo de Belém.
+            </p>
+          </div>
+          <ul class="text-xs text-stone-600 space-y-1.5 border-t border-[#64513D]/10 pt-4">
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Memorial Descritivo e Plantas</li>
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Tramitação Completa na Prefeitura</li>
+          </ul>
+        </div>
+
+        <!-- Serviço 6: Apoio Técnico Local B2B -->
+        <div class="p-8 rounded-2xl bg-[#FAF8F5] border-2 border-[#D89C17] hover:border-[#64513D] transition-all shadow-sm flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-[#D89C17] text-[#1E1917] flex items-center justify-center font-bold mb-5 shadow-sm">
+              <i data-lucide="handshake" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E1917] mb-2 group-hover:text-[#64513D] transition-colors">Apoio técnico para escritórios parceiros</h3>
+            <p class="text-xs text-stone-600 leading-relaxed mb-4">
+              Escritórios de engenharia e arquitetura de SP, RJ e outros estados contratam nosso suporte local para vistorias, levantamentos métricos e aprovação municipal.
+            </p>
+          </div>
+          <ul class="text-xs text-stone-600 space-y-1.5 border-t border-[#64513D]/10 pt-4">
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Parceria sem conflito de interesses</li>
+            <li class="flex items-center gap-1.5 font-medium text-[#1E1917]"><i data-lucide="check" class="w-3.5 h-3.5 text-[#5E692E]"></i> Comunicação organizada à distância</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 4. MINHA AUTORIDADE (Slide 2, 4 e 10 do PPTX - Foto Oficial) -->
+  <!-- ============================================================== -->
+  <section id="autoridade" class="scroll-mt-20 py-24 bg-[#1E1917] text-[#FAF8F5] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Portrait da Fabíola Oficial (Foto aprovada no PPTX) -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden bg-[#272220] border-4 border-[#64513D] shadow-2xl">
+              <img src="assets/fabiola-portrait.png" 
+                   alt="Arquiteta Fabíola Góes - Especialista em Regularização e Licenciamento" 
+                   class="w-full h-full object-cover object-top" />
+            </div>
+            <div class="absolute -bottom-5 -right-5 bg-[#64513D] text-[#FAF8F5] p-5 rounded-2xl border border-[#DAD3C7]/30 shadow-2xl">
+              <div class="text-3xl font-extrabold text-[#D89C17]">16+ Anos</div>
+              <div class="text-xs text-[#DAD3C7]">No Setor Público e Projetos Legais</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trajetória e Diferenciais Técnicos -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full badge-brown text-xs font-bold uppercase tracking-wider text-[#DAD3C7] border border-[#64513D]">
+            <i data-lucide="award" class="w-3.5 h-3.5 text-[#D89C17]"></i>
+            <span>ARQUITETURA + PREFEITURA + ENSINO</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-6">
+            Fabíola Góes
+          </h2>
+          
+          <div class="space-y-4 text-[#DAD3C7] text-base leading-relaxed">
+            <p>
+              Arquiteta e Urbanista graduada pela <strong>FAU/UFPA</strong> (CAU A64582-6). Minha trajetória profissional reúne mais de <strong>16 anos de experiência acumulada no setor público</strong>, atuando diretamente na análise, fiscalização e tramitação de Projetos Arquitetônicos Legais na Prefeitura de Belém.
+            </p>
+            <p>
+              Também atuo como <strong>professora de pós-graduação</strong>, ensinando arquitetos e engenheiros civis sobre licenciamento urbano, plano diretor e os caminhos práticos para aprovação de obras sem retrabalho.
+            </p>
+            <p class="border-l-2 border-[#D89C17] pl-4 text-white font-medium italic">
+              "Essa vivência me permite enxergar o processo tanto pela perspectiva de quem elabora o projeto quanto pela perspectiva de quem precisa analisá-lo e aprová-lo nos órgãos públicos. Por isso, meu trabalho não se limita a 'fazer uma planta': eu trabalho para que seu projeto tenha viabilidade jurídica e seja aprovado."
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 pt-8 border-t border-[#3D3632]">
+            <div class="p-3 bg-[#272220] rounded-xl border border-[#3D3632]">
+              <div class="text-base font-bold text-white">FAU / UFPA</div>
+              <div class="text-[11px] text-[#DAD3C7]">Arquitetura e Urbanismo</div>
+            </div>
+            <div class="p-3 bg-[#272220] rounded-xl border border-[#3D3632]">
+              <div class="text-base font-bold text-white">Prefeitura de Belém</div>
+              <div class="text-[11px] text-[#DAD3C7]">16+ Anos Analista Pública</div>
+            </div>
+            <div class="p-3 bg-[#272220] rounded-xl border border-[#3D3632]">
+              <div class="text-base font-bold text-white">Pós-Graduação</div>
+              <div class="text-[11px] text-[#DAD3C7]">Docente em Licenciamento</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 5. CASOS REAIS & COMPARADOR ANTES / DEPOIS (Slide 3) -->
+  <!-- ============================================================== -->
+  <section id="casos" class="scroll-mt-20 py-24 bg-[#FAF8F5] border-b border-[#64513D]/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-[#64513D] font-bold block mb-2">EXPERIÊNCIA COMPROVADA</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1E1917] leading-tight">
+            Casos e atuação técnica em Belém.
+          </h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button data-filter="todos" class="filter-btn bg-[#64513D] text-white px-4 py-2 rounded-full text-xs font-semibold border border-[#64513D] transition-all">Todos</button>
+          <button data-filter="regularizacao" class="filter-btn bg-transparent text-stone-700 px-4 py-2 rounded-full text-xs font-semibold border border-stone-300 hover:border-[#64513D] transition-all">Regularização</button>
+          <button data-filter="licenciamento" class="filter-btn bg-transparent text-stone-700 px-4 py-2 rounded-full text-xs font-semibold border border-stone-300 hover:border-[#64513D] transition-all">Licenciamento</button>
+          <button data-filter="comercial" class="filter-btn bg-transparent text-stone-700 px-4 py-2 rounded-full text-xs font-semibold border border-stone-300 hover:border-[#64513D] transition-all">Corporativo</button>
+        </div>
+      </div>
+
+      <!-- Cases Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Case 1: Comercial Nazaré -->
+        <div class="project-card group relative rounded-2xl overflow-hidden bg-stone-900 border border-stone-300 aspect-[4/3] cursor-pointer" data-category="comercial">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" 
+               alt="Apoio Técnico Implantação Comercial" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-[#D89C17] font-mono block mb-1">01 · CORPORATIVO</span>
+              <h3 class="text-xl font-bold text-white">Unidade Comercial em Nazaré</h3>
+              <p class="text-xs text-stone-300">Licenciamento de reforma e alvará · Belém, PA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2: Habite-se Marco -->
+        <div class="project-card group relative rounded-2xl overflow-hidden bg-stone-900 border border-stone-300 aspect-[4/3] cursor-pointer" data-category="regularizacao">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" 
+               alt="Regularização e Habite-se" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-[#D89C17] font-mono block mb-1">02 · HABITE-SE</span>
+              <h3 class="text-xl font-bold text-white">Edificação no Marco</h3>
+              <p class="text-xs text-stone-300">Habite-se e averbação em cartório · Belém, PA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3: Remembramento Umarizal -->
+        <div class="project-card group relative rounded-2xl overflow-hidden bg-stone-900 border border-stone-300 aspect-[4/3] cursor-pointer" data-category="licenciamento">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
+               alt="Aprovação de Projeto Legal" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-[#D89C17] font-mono block mb-1">03 · APROVAÇÃO SEURB</span>
+              <h3 class="text-xl font-bold text-white">Projeto Legal no Umarizal</h3>
+              <p class="text-xs text-stone-300">Aprovação na Prefeitura · Belém, PA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4: COMPARADOR ANTES / DEPOIS (Reforma e Desembargo) -->
+        <div class="project-card lg:col-span-3 group relative rounded-3xl overflow-hidden bg-stone-900 border border-stone-300 h-[360px] md:h-[420px]" data-category="regularizacao">
+          
+          <div id="beforeAfterContainer" class="before-after-container w-full h-full">
+            <!-- After (Background) -->
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Depois - Obra Regularizada com Habite-se" />
+            <div class="absolute top-4 right-4 bg-[#5E692E] text-white text-xs uppercase px-3 py-1.5 rounded-full font-bold tracking-wider z-20 shadow">
+              Depois (Aprovado & Regularizado com Habite-se)
+            </div>
+
+            <!-- Before (Overlay) -->
+            <div id="beforeAfterOverlay" class="before-after-overlay w-1/2">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" 
+                   alt="Antes - Obra Irregular sem Licença" />
+              <div class="absolute top-4 left-4 bg-[#1E1917]/95 text-[#DAD3C7] text-xs uppercase px-3 py-1.5 rounded-full font-bold tracking-wider z-20 shadow">
+                Antes (Obra com Pendência / Sem Alvará)
+              </div>
+            </div>
+
+            <!-- Draggable Divider Line -->
+            <div id="beforeAfterSlider" class="before-after-slider left-1/2">
+              <div class="before-after-handle">
+                <i data-lucide="chevrons-left-right" class="w-5 h-5 text-white"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute bottom-4 left-6 z-20 pointer-events-none">
+            <span class="text-xs uppercase tracking-widest text-[#D89C17] font-mono block">CASO DE SUCESSO</span>
+            <h3 class="text-2xl font-bold text-white">Regularização e Emissão de Habite-se</h3>
+            <p class="text-xs text-stone-200">Arraste a barra para visualizar a conformidade final da obra</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 6. DIAGNÓSTICO RÁPIDO DE REGULARIZAÇÃO (Quiz 1 Minuto) -->
+  <!-- ============================================================== -->
+  <section id="regularizacao" class="scroll-mt-20 py-24 bg-[#1E1917] text-[#FAF8F5] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Side: Copy -->
+        <div class="lg:col-span-5">
+          <div class="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full badge-moss text-xs font-bold uppercase tracking-wider text-[#DAD3C7]">
+            <i data-lucide="help-circle" class="w-3.5 h-3.5 text-[#5E692E]"></i>
+            <span>Diagnóstico Preliminar</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-6">
+            Seu imóvel está regular? Descubra em 1 minuto.
+          </h2>
+          <p class="text-[#DAD3C7] text-base leading-relaxed mb-6">
+            Responda a 3 perguntas objetivas e descubra se o seu imóvel em Belém está apto para venda, financiamento bancário ou averbação perante a SEURB.
+          </p>
+
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="bg-[#272220] text-[#DAD3C7] px-3 py-1.5 rounded-md border border-[#3D3632]">HABITE-SE</span>
+            <span class="bg-[#272220] text-[#DAD3C7] px-3 py-1.5 rounded-md border border-[#3D3632]">AVERBAÇÃO</span>
+            <span class="bg-[#272220] text-[#DAD3C7] px-3 py-1.5 rounded-md border border-[#3D3632]">ALVARÁ DE OBRA</span>
+            <span class="bg-[#272220] text-[#DAD3C7] px-3 py-1.5 rounded-md border border-[#3D3632]">USUCAPIÃO</span>
+          </div>
+        </div>
+
+        <!-- Right Side: Quiz Card -->
+        <div class="lg:col-span-7">
+          <div class="bg-[#272220] rounded-3xl p-6 sm:p-10 border border-[#3D3632] shadow-2xl">
+            
+            <div class="flex items-center justify-between pb-4 mb-6 border-b border-[#3D3632] text-xs">
+              <span class="text-[#D89C17] font-bold uppercase tracking-wider">Auditoria Expressa de Imóvel</span>
+              <span class="text-stone-400">Totalmente Gratuito</span>
+            </div>
+
+            <div class="space-y-6">
+              
+              <!-- Q1 -->
+              <div>
+                <label class="block text-sm font-semibold text-white mb-3">1. O imóvel possui Habite-se expedido pela Prefeitura?</label>
+                <div class="grid grid-cols-3 gap-3">
+                  <button type="button" data-quiz-group="habite-se" data-value="Sim" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Sim</button>
+                  <button type="button" data-quiz-group="habite-se" data-value="Não" class="py-3 px-4 rounded-xl bg-[#64513D] text-white font-bold text-sm transition-all text-center">Não</button>
+                  <button type="button" data-quiz-group="habite-se" data-value="Não sei" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Não sei</button>
+                </div>
+              </div>
+
+              <!-- Q2 -->
+              <div>
+                <label class="block text-sm font-semibold text-white mb-3">2. Houve reforma ou acréscimo sem projeto aprovado?</label>
+                <div class="grid grid-cols-2 gap-3">
+                  <button type="button" data-quiz-group="reforma" data-value="Sim" class="py-3 px-4 rounded-xl bg-[#64513D] text-white font-bold text-sm transition-all text-center">Sim</button>
+                  <button type="button" data-quiz-group="reforma" data-value="Não" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Não</button>
+                </div>
+              </div>
+
+              <!-- Q3 -->
+              <div>
+                <label class="block text-sm font-semibold text-white mb-3">3. Qual é o seu objetivo prioritário?</label>
+                <div class="grid grid-cols-3 gap-3">
+                  <button type="button" data-quiz-group="objetivo" data-value="Vender" class="py-3 px-4 rounded-xl bg-[#64513D] text-white font-bold text-sm transition-all text-center">Vender</button>
+                  <button type="button" data-quiz-group="objetivo" data-value="Financiar" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Financiar</button>
+                  <button type="button" data-quiz-group="objetivo" data-value="Regularizar" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Regularizar</button>
+                </div>
+              </div>
+
+              <!-- Verdict -->
+              <div class="mt-6 p-5 rounded-2xl bg-[#1E1917] border border-[#64513D]/60">
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-full bg-[#64513D]/30 text-[#D89C17] flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <i data-lucide="alert-circle" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h4 id="quizVerdictTitle" class="text-base font-bold text-white mb-1">
+                      Seu imóvel precisa de regularização técnica perante a Prefeitura.
+                    </h4>
+                    <p id="quizVerdictDesc" class="text-xs text-[#DAD3C7] leading-relaxed">
+                      Sem habite-se ou com acréscimo não averbado, a venda ou financiamento trava no cartório e na Caixa. A Arquiteta Fabíola Góes analisa seu caso e indica o caminho seguro para aprovação.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Button -->
+              <a id="quizWhatsAppBtn" 
+                 href="https://wa.me/5591982324820" 
+                 target="_blank" 
+                 class="w-full mt-4 bg-[#64513D] text-white py-4 px-6 rounded-xl font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#4E3E2E] transition-all shadow-lg">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Enviar Diagnóstico no WhatsApp da Fabíola</span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 7. CONTATO, ESCRITÓRIO & LOCALIZAÇÃO -->
+  <!-- ============================================================== -->
+  <section id="contato" class="scroll-mt-20 py-24 bg-[#FAF8F5] border-t border-[#64513D]/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Informações de Contato -->
+        <div class="lg:col-span-6 space-y-8">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full badge-brown text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+              <span>Atendimento em Belém e Nacional</span>
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1E1917] mb-4">
+              Vamos avaliar sua demanda técnica?
+            </h2>
+            <p class="text-stone-600 text-sm leading-relaxed max-w-md">
+              Atendimento com hora marcada no escritório em Nazaré para clientes de Belém, ou atendimento remoto estruturado para empresas de outros estados.
+            </p>
+          </div>
+
+          <div class="space-y-5 text-sm">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#64513D]/15 shadow-sm">
+              <div class="w-10 h-10 rounded-full bg-[#64513D] text-white flex items-center justify-center flex-shrink-0">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-stone-500 font-bold block">WhatsApp Oficial</span>
+                <a href="https://wa.me/5591982324820" target="_blank" class="text-lg font-bold text-[#1E1917] hover:text-[#64513D] transition-colors">
+                  (91) 98232-4820
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#64513D]/15 shadow-sm">
+              <div class="w-10 h-10 rounded-full bg-[#5E692E] text-white flex items-center justify-center flex-shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-stone-500 font-bold block">E-mail Profissional</span>
+                <a href="mailto:projetos@fabiolagoes.com.br" class="text-base font-semibold text-[#1E1917] hover:text-[#5E692E] transition-colors">
+                  projetos@fabiolagoes.com.br
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#64513D]/15 shadow-sm">
+              <div class="w-10 h-10 rounded-full bg-[#9D5E39] text-white flex items-center justify-center flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-stone-500 font-bold block">Endereço do Escritório</span>
+                <p class="text-sm font-semibold text-[#1E1917]">
+                  Av. Gov. José Malcher, 153 · Nazaré<br />
+                  Belém – PA, CEP 66035-100
+                </p>
+                <span class="text-xs text-stone-500 mt-1 block">Segunda a Sexta-feira: 09h00 às 17h00</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Redes Sociais -->
+          <div class="pt-4 flex items-center gap-3">
+            <a href="https://www.instagram.com/fabiolagoesarquiteta/" target="_blank" class="px-4 py-2 rounded-full bg-white border border-[#64513D]/20 text-[#64513D] text-xs font-bold flex items-center gap-2 hover:bg-[#64513D] hover:text-white transition-all shadow-sm">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+              <span>@fabiolagoesarquiteta</span>
+            </a>
+            <a href="https://www.linkedin.com/in/fabiolagoesarquiteta/" target="_blank" class="px-4 py-2 rounded-full bg-white border border-[#64513D]/20 text-[#64513D] text-xs font-bold flex items-center gap-2 hover:bg-[#64513D] hover:text-white transition-all shadow-sm">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Card de Localização -->
+        <div class="lg:col-span-6">
+          <div class="bg-[#1E1917] rounded-3xl p-8 border border-[#3D3632] shadow-xl text-white h-full flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#D89C17]">Localização Estratégica</span>
+                <span class="text-xs text-[#DAD3C7]">Bairro Nazaré · Belém</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Fabíola Goes Arquiteta</h3>
+              <p class="text-xs text-[#DAD3C7] mb-6">
+                Ponto nobre e central em Belém, com fácil acesso aos principais órgãos de licenciamento (SEURB, SEMAS, Bombeiros e Cartórios).
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-[#3D3632] bg-[#272220] p-6 text-center my-4">
+              <i data-lucide="navigation" class="w-10 h-10 text-[#DAD3C7] mx-auto mb-2 opacity-80"></i>
+              <div class="font-bold text-sm text-white">Av. Gov. José Malcher, 153</div>
+              <div class="text-xs text-[#DAD3C7] mt-1">Nazaré · Belém – PA</div>
+              <a href="https://maps.google.com/?q=Av.+Gov.+Jos%C3%A9+Malcher,+153+-+Nazar%C3%A9,+Bel%C3%A9m+-+PA" 
+                 target="_blank" 
+                 class="mt-4 inline-flex items-center gap-1.5 text-xs text-[#D89C17] font-semibold hover:underline">
+                <span>Traçar rota no Google Maps</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+
+            <div class="pt-4 border-t border-[#3D3632] flex items-center justify-between text-xs text-stone-400">
+              <span>© Fabíola Goes Arquiteta · CAU A64582-6</span>
+              <span>Belém – PA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- BARRA FIXA DE CONVERSÃO MOBILE -->
+  <!-- ============================================================== -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#1E1917]/95 backdrop-blur-md border-t border-[#3D3632] p-3 flex items-center gap-3">
+    <a href="#para-empresas" class="flex-1 bg-[#64513D] text-[#FAF8F5] py-3 rounded-full text-center text-xs font-bold hover:bg-[#4E3E2E] transition-colors">
+      Solicitar Proposta B2B
+    </a>
+    <a href="https://wa.me/5591982324820" target="_blank" class="flex-1 bg-[#25D366] text-white py-3 rounded-full text-center text-xs font-bold flex items-center justify-center gap-1.5 shadow-lg">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Inicializa os ícones do Lucide
+    lucide.createIcons();
+  </script>
+</body>
+</html>

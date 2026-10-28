@@ -1,0 +1,184 @@
+/* Fabíola Góes Arquiteta - Identidade Visual Oficial */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* Paleta Oficial Fabíola Góes */
+  --fg-brown: #64513D;
+  --fg-sand: #DAD3C7;
+  --fg-sand-light: #F4F1EA;
+  --fg-moss: #5E692E;
+  --fg-terracotta: #9D5E39;
+  --fg-dark: #1E1917;
+  --fg-dark-card: #272220;
+  --fg-dark-subtle: #332D2A;
+  --fg-gold: #D89C17;
+  
+  --bg-primary: #FAF8F5;
+  --bg-card: #FFFFFF;
+  --text-primary: #1E1917;
+  --text-muted: #5C5551;
+  --text-light: #FAF8F5;
+  --text-light-muted: #DAD3C7;
+  
+  --border-light: rgba(100, 81, 61, 0.15);
+  --border-dark: rgba(218, 211, 199, 0.18);
+  
+  --whatsapp: #25D366;
+  --whatsapp-hover: #20BD5A;
+}
+
+body {
+  font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--fg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fg-brown);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-gold);
+}
+
+/* Glassmorphism Específico para a Paleta */
+.glass-dark-fg {
+  background: rgba(30, 25, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-dark);
+}
+
+.glass-sand-fg {
+  background: rgba(244, 241, 234, 0.90);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-light);
+}
+
+/* Comparador Antes e Depois */
+.before-after-container {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.before-after-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.before-after-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.before-after-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #FFFFFF;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+  cursor: ew-resize;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.before-after-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: var(--fg-brown);
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+/* Acordeão de Serviços */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 900px;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+  background-color: var(--fg-brown);
+  color: #FFFFFF;
+}
+
+/* Range input styling */
+input[type=range] {
+  -webkit-appearance: none;
+  background: #E5DFD7;
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: var(--fg-brown);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  border: 2px solid #FFFFFF;
+}
+
+/* Efeito sutil de flutuação */
+@keyframes floatSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-float {
+  animation: floatSubtle 4s ease-in-out infinite;
+}
+
+/* Tags de destaque */
+.badge-moss {
+  background-color: rgba(94, 105, 46, 0.12);
+  color: #4C5525;
+  border: 1px solid rgba(94, 105, 46, 0.25);
+}
+
+.badge-terracotta {
+  background-color: rgba(157, 94, 57, 0.12);
+  color: #8C4E2B;
+  border: 1px solid rgba(157, 94, 57, 0.25);
+}
+
+.badge-brown {
+  background-color: rgba(100, 81, 61, 0.12);
+  color: var(--fg-brown);
+  border: 1px solid rgba(100, 81, 61, 0.25);
+}
