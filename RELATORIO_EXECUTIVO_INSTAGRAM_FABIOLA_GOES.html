@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano Mestre de Upgrade Instagram — Fabíola Góes Arquiteta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Red Hat Display', sans-serif;
+      background-color: #FAF8F5;
+      color: #1E1917;
+    }
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .card-box {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+        box-shadow: none !important;
+      }
+    }
+    .badge-critica {
+      background-color: #FEE2E2;
+      color: #991B1B;
+      border: 1px solid #F87171;
+    }
+    .badge-alto {
+      background-color: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FBBF24;
+    }
+    .badge-otimizacao {
+      background-color: #DCFCE7;
+      color: #166534;
+      border: 1px solid #4ADE80;
+    }
+  </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+
+  <!-- BARRA DE FERRAMENTAS SUPERIOR (FIXA NA TELA, SOME NA IMPRESSÃO) -->
+  <div class="no-print max-w-5xl mx-auto mb-8 bg-[#1E1917] text-white p-4 rounded-2xl shadow-xl flex flex-wrap items-center justify-between gap-4 border border-[#3D3632]">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-[#F97316]/20 text-[#F97316] flex items-center justify-center font-bold">
+        <i data-lucide="file-check-2" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-widest text-[#D89C17] font-bold">Relatório Executivo Oficial</div>
+        <div class="text-sm font-extrabold text-white">Visualizador de Alta Excelência · Fabíola Góes</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-[#F97316] hover:bg-[#EA580C] text-white text-xs font-bold flex items-center gap-2 transition-all shadow-md">
+        <i data-lucide="printer" class="w-4 h-4"></i>
+        <span>Salvar em PDF / Imprimir</span>
+      </button>
+      <a href="SIMULADOR_CARROSSEL_B2B.html" target="_blank" class="px-4 py-2 rounded-xl bg-[#272220] hover:bg-[#3D3632] text-stone-200 text-xs font-semibold flex items-center gap-2 transition-all border border-stone-700">
+        <i data-lucide="smartphone" class="w-4 h-4 text-[#D89C17]"></i>
+        <span>Simulador Mobile</span>
+      </a>
+      <a href="https://fabiolagoesarquiteta.vercel.app" target="_blank" class="px-4 py-2 rounded-xl bg-[#272220] hover:bg-[#3D3632] text-stone-200 text-xs font-semibold flex items-center gap-2 transition-all border border-stone-700">
+        <i data-lucide="globe" class="w-4 h-4 text-[#5E692E]"></i>
+        <span>Site Oficial</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- DOCUMENTO PRINCIPAL -->
+  <main class="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl p-6 sm:p-12 border border-stone-200">
+    
+    <!-- CABEÇALHO DO RELATÓRIO -->
+    <header class="border-b border-stone-200 pb-8 mb-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#64513D]/10 text-[#64513D] text-xs font-bold uppercase tracking-wider mb-2">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#F97316]"></i>
+            <span>Auditoria Estratégica de Perfil · Diagnóstico R$ 100k</span>
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-black text-[#1E1917] tracking-tight">
+            Plano Mestre de Upgrade do Instagram
+          </h1>
+          <p class="text-stone-600 text-sm mt-1">
+            Posicionamento, retenção e conversão de contratos de alto valor para <strong>@fabiolagoesarquiteta</strong>
+          </p>
+        </div>
+        <div class="text-left sm:text-right text-xs text-stone-500 border-l sm:border-l-0 sm:border-r-0 pl-4 sm:pl-0 border-stone-200">
+          <div class="font-bold text-[#1E1917] text-sm">Fabíola Góes Arquiteta</div>
+          <div>CAU/BR A64582-6</div>
+          <div class="text-[#F97316] font-semibold mt-0.5">Belém · Atendimento Nacional</div>
+          <div class="text-stone-400 mt-1">Foco Comercial: 2026/2027</div>
+        </div>
+      </div>
+
+      <!-- CARD RESUMO DO CLIENTE -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+        <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+          <span class="text-stone-400 font-bold block uppercase tracking-wider text-[10px] mb-1">Especialidade</span>
+          <span class="font-bold text-[#1E1917] text-sm">Regularização & Licenciamento</span>
+          <p class="text-stone-600 mt-0.5">Aprovação na Prefeitura, Alvarás, Habite-se e Desembargos.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+          <span class="text-stone-400 font-bold block uppercase tracking-wider text-[10px] mb-1">Diferencial Central</span>
+          <span class="font-bold text-[#1E1917] text-sm">+16 Anos de Setor Público</span>
+          <p class="text-stone-600 mt-0.5">Visão de quem analisa e aprova + Professora de Pós-Graduação.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+          <span class="text-stone-400 font-bold block uppercase tracking-wider text-[10px] mb-1">Foco de Receita (2026)</span>
+          <span class="font-bold text-[#F97316] text-sm">Contratos B2B de Alto Ticket</span>
+          <p class="text-stone-600 mt-0.5">Apoio local para empresas de fora e regularizações nobres.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- RESUMO EXECUTIVO -->
+    <section class="mb-12 card-box">
+      <div class="p-6 rounded-2xl bg-gradient-to-r from-[#1E1917] to-[#272220] text-white">
+        <div class="flex items-center gap-2 text-[#D89C17] text-xs font-bold uppercase tracking-wider mb-2">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+          <span>A Grande Mudança de Chave</span>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-black mb-3">
+          A Fabíola não precisa de mais posts: precisa de clareza cirúrgica de posicionamento.
+        </h2>
+        <p class="text-xs sm:text-sm text-[#DAD3C7] leading-relaxed">
+          Hoje, 95% dos perfis de arquitetos no Instagram parecem revistas de decoração de interiores (fotos de almofadas e salas prontas). Esse formato atrai apenas pessoas físicas buscando reformas baratas. 
+          O verdadeiro ativo da Fabíola é ser uma <strong>CEO especialista em segurança jurídica e aprovação legal na Prefeitura</strong>. O perfil dela deve funcionar como a <em>landing page</em> de uma consultoria técnica de alto nível que empresas de São Paulo, Rio e Curitiba contratam com confiança imediata.
+        </p>
+      </div>
+    </section>
+
+    <!-- PARTE 1: TABELA DE IMPACTO DA AUDITORIA -->
+    <section class="mb-12 card-box">
+      <div class="flex items-center gap-2 mb-4">
+        <div class="w-7 h-7 rounded-lg bg-[#64513D] text-white flex items-center justify-center font-bold text-xs">1</div>
+        <h2 class="text-xl font-extrabold text-[#1E1917]">Auditoria de Posicionamento & Conversão (Tabela de Impacto)</h2>
+      </div>
+
+      <div class="overflow-x-auto border border-stone-200 rounded-2xl">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-[#FAF8F5] text-stone-600 uppercase tracking-wider font-bold border-b border-stone-200">
+            <tr>
+              <th class="p-4">Área</th>
+              <th class="p-4">Problema Encontrado</th>
+              <th class="p-4">Impacto no Negócio</th>
+              <th class="p-4">Correção Específica</th>
+              <th class="p-4 text-center">Prioridade</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-200">
+            
+            <tr class="hover:bg-stone-50/80 transition-colors">
+              <td class="p-4 font-bold text-[#1E1917]">1. Posicionamento</td>
+              <td class="p-4 text-stone-700">Público leigo e empresas de fora não sabem se ela faz interiores ou consultoria técnica.</td>
+              <td class="p-4 text-red-700 font-medium">Perda de contratos B2B de expansão de franquias (R$ 15k a R$ 60k+).</td>
+              <td class="p-4 text-stone-700">Eliminar referências a interiores. Assumir a marca: <em>"Arquiteta de Licenciamento & Apoio B2B"</em>.</td>
+              <td class="p-4 text-center"><span class="badge-critica px-2.5 py-1 rounded-full font-bold text-[10px]">CRÍTICA</span></td>
+            </tr>
+
+            <tr class="hover:bg-stone-50/80 transition-colors">
+              <td class="p-4 font-bold text-[#1E1917]">2. Bio & Proposta</td>
+              <td class="p-4 text-stone-700">Bio não comunica os 16 anos de prefeitura nem direciona para o site interativo.</td>
+              <td class="p-4 text-red-700 font-medium">Visitante entra, acha bonito, mas fecha a aba em 3 segundos sem tomar ação.</td>
+              <td class="p-4 text-stone-700">Substituir pela Bio Oficial calibrada em 148 caracteres com o link do Quiz e canal B2B.</td>
+              <td class="p-4 text-center"><span class="badge-critica px-2.5 py-1 rounded-full font-bold text-[10px]">CRÍTICA</span></td>
+            </tr>
+
+            <tr class="hover:bg-stone-50/80 transition-colors">
+              <td class="p-4 font-bold text-[#1E1917]">3. Conteúdo & Hooks</td>
+              <td class="p-4 text-stone-700">Foco em mostrar o projeto pronto em vez do risco e prejuízo que foram evitados.</td>
+              <td class="p-4 text-amber-700 font-medium">Baixa retenção. O cliente só contrata quando sente urgência (risco de embargo).</td>
+              <td class="p-4 text-stone-700">Publicar carrosséis com ganchos de dor: <em>"3 erros que a SEURB não perdoa"</em>, <em>"Imóvel sem Habite-se"</em>.</td>
+              <td class="p-4 text-center"><span class="badge-alto px-2.5 py-1 rounded-full font-bold text-[10px]">ALTO IMPACTO</span></td>
+            </tr>
+
+            <tr class="hover:bg-stone-50/80 transition-colors">
+              <td class="p-4 font-bold text-[#1E1917]">4. Formatos & Âncoras</td>
+              <td class="p-4 text-stone-700">Feed sem posts fixados de apresentação institucional e autoridade corporativa.</td>
+              <td class="p-4 text-red-700 font-medium">Visitantes novos não conhecem as credenciais nem o modelo de parceria técnica.</td>
+              <td class="p-4 text-stone-700">Fixar os 3 posts pilares no topo do feed com as fotos do ensaio no escritório em Nazaré.</td>
+              <td class="p-4 text-center"><span class="badge-critica px-2.5 py-1 rounded-full font-bold text-[10px]">CRÍTICA</span></td>
+            </tr>
+
+            <tr class="hover:bg-stone-50/80 transition-colors">
+              <td class="p-4 font-bold text-[#1E1917]">5. CTAs & Funil</td>
+              <td class="p-4 text-stone-700">Apenas "chame no WhatsApp" genérico, atraindo curiosos sem orçamento.</td>
+              <td class="p-4 text-amber-700 font-medium">Perda de tempo filtrando clientes que acham que planta legal custa R$ 500.</td>
+              <td class="p-4 text-stone-700">Direcionar o público para o <strong>Quiz de 1 min</strong> e formulário B2B no site.</td>
+              <td class="p-4 text-center"><span class="badge-alto px-2.5 py-1 rounded-full font-bold text-[10px]">ALTO IMPACTO</span></td>
+            </tr>
+
+            <tr class="hover:bg-stone-50/80 transition-colors">
+              <td class="p-4 font-bold text-[#1E1917]">6. Oferta Comercial</td>
+              <td class="p-4 text-stone-700">Tentar vender cursos de arquitetura ao mesmo tempo em que capta contratos B2B.</td>
+              <td class="p-4 text-emerald-700 font-medium">Confunde o cliente empresarial, que acha que o perfil é de estudante.</td>
+              <td class="p-4 text-stone-700">Focar 100% em contratos em 2026. Usar a docência apenas como selo de autoridade técnica.</td>
+              <td class="p-4 text-center"><span class="badge-otimizacao px-2.5 py-1 rounded-full font-bold text-[10px]">OTIMIZAÇÃO</span></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PARTE 2: OS 5 MAIORES VAZAMENTOS DO FUNIL -->
+    <section class="mb-12 card-box">
+      <div class="flex items-center gap-2 mb-4">
+        <div class="w-7 h-7 rounded-lg bg-[#64513D] text-white flex items-center justify-center font-bold text-xs">2</div>
+        <h2 class="text-xl font-extrabold text-[#1E1917]">Os 5 Vazamentos do Funil de Conversão</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs mb-6">
+        
+        <div class="p-3.5 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-bold text-[#F97316] uppercase tracking-wider mb-1">Etapa 1</div>
+            <div class="font-extrabold text-[#1E1917]">Conteúdo</div>
+            <p class="text-[11px] text-stone-500 mt-1">Posts com fotos soltas sem gancho de curiosidade.</p>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-200 text-[10px] text-red-600 font-bold">
+            🔴 Vazamento: A pessoa passa direto no feed.
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-bold text-[#F97316] uppercase tracking-wider mb-1">Etapa 2</div>
+            <div class="font-extrabold text-[#1E1917]">Visita ao Perfil</div>
+            <p class="text-[11px] text-stone-500 mt-1">Bio genérica sem explicar o diferencial de 16 anos.</p>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-200 text-[10px] text-red-600 font-bold">
+            🔴 Vazamento: Sai sem seguir.
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-bold text-[#F97316] uppercase tracking-wider mb-1">Etapa 3</div>
+            <div class="font-extrabold text-[#1E1917]">Seguidor</div>
+            <p class="text-[11px] text-stone-500 mt-1">Falta de destaques explicando o passo a passo do escritório.</p>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-200 text-[10px] text-amber-600 font-bold">
+            🟡 Vazamento: Segue, mas é passivo.
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-bold text-[#F97316] uppercase tracking-wider mb-1">Etapa 4</div>
+            <div class="font-extrabold text-[#1E1917]">Lead Qualificado</div>
+            <p class="text-[11px] text-stone-500 mt-1">Link leva para chat cru sem triagem de documentos.</p>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-200 text-[10px] text-amber-600 font-bold">
+            🟡 Vazamento: Curiosos sem orçamento.
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-bold text-[#F97316] uppercase tracking-wider mb-1">Etapa 5</div>
+            <div class="font-extrabold text-[#1E1917]">Contrato Fechado</div>
+            <p class="text-[11px] text-stone-500 mt-1">Demora na proposta por falta de apresentação padrão.</p>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-200 text-[10px] text-emerald-600 font-bold">
+            🟢 Solução: Enviar o site B2B no direct.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PARTE 3: MATERIAIS PRONTOS PARA COPIAR E COLAR -->
+    <section class="mb-12 card-box page-break">
+      <div class="flex items-center gap-2 mb-6">
+        <div class="w-7 h-7 rounded-lg bg-[#64513D] text-white flex items-center justify-center font-bold text-xs">3</div>
+        <h2 class="text-xl font-extrabold text-[#1E1917]">Materiais Prontos: Copiar e Colar (Zero Esforço)</h2>
+      </div>
+
+      <!-- MATERIAL 1: A NOVA BIO -->
+      <div class="mb-8 p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#F97316]"></span>
+            <h3 class="font-bold text-sm text-[#1E1917]">1. A Nova Bio Oficial (148 caracteres · dentro do limite)</h3>
+          </div>
+          <button onclick="copiarTexto('bioText', 'btnBio')" id="btnBio" class="no-print px-3 py-1 rounded-lg bg-[#F97316] hover:bg-[#EA580C] text-white text-xs font-bold transition-all shadow-sm flex items-center gap-1.5">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span>Copiar Bio</span>
+          </button>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-stone-300 font-mono text-xs text-stone-800 leading-relaxed whitespace-pre-wrap select-all" id="bioText">Fabíola Góes | Arquiteta & Licenciamento
+🏛️ +16 anos de análise na Prefeitura · CAU A64582-6
+📍 Apoio técnico local em Belém p/ empresas de todo o Brasil
+⚖️ Regularização · Alvará · Habite-se
+👇 Diagnóstico do seu imóvel em 1 min:
+fabiolagoesarquiteta.vercel.app</div>
+      </div>
+
+      <!-- MATERIAL 2: POST FIXADO 1 (CARROSSEL B2B) -->
+      <div class="mb-8 p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#5E692E]"></span>
+            <h3 class="font-bold text-sm text-[#1E1917]">2. Post Fixado 1 — Carrossel B2B (Slide 17 do PPT)</h3>
+          </div>
+          <a href="POST_01_CARROSSEL_B2B/slide_1.png" target="_blank" class="no-print px-3 py-1 rounded-lg bg-[#272220] hover:bg-[#3D3632] text-stone-200 text-xs font-semibold transition-all border border-stone-700 flex items-center gap-1.5">
+            <i data-lucide="image" class="w-3.5 h-3.5 text-[#F97316]"></i>
+            <span>Ver Slides PNG Prontos</span>
+          </a>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 text-[11px] mb-4">
+          <div class="p-3 rounded-xl bg-white border border-stone-300">
+            <div class="font-bold text-[#F97316] mb-1">Slide 1 (Capa)</div>
+            <p class="text-stone-700">"Sua equipe está em outro estado. Sua obra está em Belém."</p>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-stone-300">
+            <div class="font-bold text-[#F97316] mb-1">Slide 2</div>
+            <p class="text-stone-700">"Projetar de longe é viável. Aprovar exige presença local."</p>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-stone-300">
+            <div class="font-bold text-[#F97316] mb-1">Slide 3</div>
+            <p class="text-stone-700">"O que nós assumimos: Viabilidade, Adequação à SEURB e Protocolos."</p>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-stone-300">
+            <div class="font-bold text-[#F97316] mb-1">Slide 4</div>
+            <p class="text-stone-700">"Você mantém o cliente. Nós blindamos o processo com ética."</p>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-stone-300">
+            <div class="font-bold text-[#F97316] mb-1">Slide 5 (CTA)</div>
+            <p class="text-stone-700">"Vai iniciar obras em Belém? Envie mensagem ou link na bio."</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-stone-600">Legenda Oficial do Post 1:</span>
+          <button onclick="copiarTexto('legendaPost1', 'btnPost1')" id="btnPost1" class="no-print text-xs font-bold text-[#F97316] hover:underline flex items-center gap-1">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span>Copiar Legenda</span>
+          </button>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-stone-300 font-mono text-xs text-stone-800 leading-relaxed whitespace-pre-wrap select-all max-h-48 overflow-y-auto" id="legendaPost1">Sua empresa ou escritório foi contratado para um projeto em Belém, mas você não tem equipe técnica na cidade?
+
+A aprovação de projetos legais e o licenciamento de obras exigem conhecimento minucioso dos procedimentos da SEURB, Corpo de Bombeiros e órgãos ambientais municipais. Tentar conduzir isso à distância costuma gerar atrasos no cronograma e custos imprevistos com viagens.
+
+No escritório Fabíola Góes Arquiteta, atuamos como o parceiro técnico local para empresas e escritórios de todo o Brasil que precisam implantar unidades, reformar lojas ou licenciar empreendimentos em Belém.
+
+Como funciona a parceria:
+✔ Você mantém a autoria do projeto executivo e o relacionamento com seu cliente;
+✔ Nós assumimos a adequação às normas locais, protocolos, vistorias e condução do processo;
+✔ Comunicação transparente e relatórios de acompanhamento passo a passo.
+
+Tem uma demanda em andamento na capital paraense? Envie uma mensagem direta aqui no Instagram ou acesse o link no perfil para solicitar uma apresentação técnica institucional.
+
+#arquiteturabelem #licenciamentodeobras #seurb #regularizacaodeimoveis #arquitetosbelem #engenhariacivil #franquiasbrasil #obrasbelem #expansaodefranquias</div>
+      </div>
+
+      <!-- MATERIAL 3: ROTEIRO DE REELS DE 45 SEGUNDOS -->
+      <div class="mb-8 p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#D89C17]"></span>
+          <h3 class="font-bold text-sm text-[#1E1917]">3. Post Fixado 2 — Roteiro de Reels de 45 segundos (Teleprompter)</h3>
+        </div>
+        <div class="space-y-3 text-xs">
+          
+          <div class="p-3.5 rounded-xl bg-white border border-stone-300">
+            <span class="font-bold text-[#F97316] block mb-1">[00s - 05s] O GANCHO (Olhando firme para a câmera)</span>
+            <p class="text-stone-800 italic">"Você sabia que fazer uma planta bonita é a parte mais fácil de um projeto? O que realmente destrava uma obra é saber como aprová-la dentro da Prefeitura."</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-stone-300">
+            <span class="font-bold text-[#64513D] block mb-1">[05s - 18s] A CREDENCIAL (Com naturalidade e autoridade)</span>
+            <p class="text-stone-800 italic">"Sou Fabíola Góes, arquiteta e urbanista em Belém. Ao longo de mais de 16 anos analisando processos no setor público e ensinando arquitetos e engenheiros na pós-graduação, eu vi centenas de obras embargadas simplesmente porque faltava domínio da legislação municipal."</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-stone-300">
+            <span class="font-bold text-[#5E692E] block mb-1">[18s - 32s] A SOLUÇÃO</span>
+            <p class="text-stone-800 italic">"Hoje, o nosso escritório é especializado justamente em evitar essas dores de cabeça: cuidamos da aprovação de projetos legais, alvarás, habite-se e damos suporte técnico para empresas de todo o Brasil que estão construindo aqui na capital paraense."</p>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-stone-300">
+            <span class="font-bold text-[#1E1917] block mb-1">[32s - 45s] A CHAMADA PARA AÇÃO</span>
+            <p class="text-stone-800 italic">"Se você tem um imóvel com pendência documental ou uma empresa que vai iniciar obras em Belém, não comece no escuro. Toque no link da minha bio e faça uma avaliação técnica da sua demanda."</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PARTE 4: A ÚNICA MUDANÇA DE MAIOR RETORNO FINANCEIRO -->
+    <section class="card-box">
+      <div class="p-6 rounded-2xl bg-[#64513D]/10 border-2 border-[#64513D]/30">
+        <div class="flex items-center gap-2 text-[#64513D] text-xs font-bold uppercase tracking-wider mb-2">
+          <i data-lucide="trending-up" class="w-4 h-4 text-[#F97316]"></i>
+          <span>A Decisão Financeira Mais Importante de 2026</span>
+        </div>
+        <h3 class="text-xl font-extrabold text-[#1E1917] mb-2">
+          Por que focar em Empresas de Outros Estados multiplica o faturamento?
+        </h3>
+        <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mb-4">
+          Um projeto residencial comum em Belém disputa preço no leilão com recém-formados por <strong>R$ 3.000 a R$ 8.000</strong>. 
+          Já uma rede de franquias de São Paulo, uma construtora ou uma empresa que vai abrir loja em shopping ou avenida comercial paga <strong>R$ 15.000 a R$ 60.000+ por processo de licenciamento</strong> sem discutir honorários, porque o custo de ter um ponto comercial parado em Belém é infinitamente mais alto do que pagar uma consultoria experiente.
+        </p>
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-[#F97316]">
+          <i data-lucide="check-circle" class="w-4 h-4"></i>
+          <span>O Instagram oficial agora está 100% blindado e orientado para essa captação.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ DO DOCUMENTO -->
+    <footer class="mt-12 pt-6 border-t border-stone-200 text-center text-xs text-stone-400">
+      <div>Fabíola Góes Arquitetura e Consultoria Técnica · CAU/BR A64582-6</div>
+      <div class="mt-1">Av. Gov. José Malcher, 153 · Nazaré · Belém – PA</div>
+    </footer>
+
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    function copiarTexto(elementId, btnId) {
+      const texto = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(texto).then(() => {
+        const btn = document.getElementById(btnId);
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = '<span>✓ Copiado!</span>';
+        btn.classList.add('bg-emerald-600');
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+          btn.classList.remove('bg-emerald-600');
+          lucide.createIcons();
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

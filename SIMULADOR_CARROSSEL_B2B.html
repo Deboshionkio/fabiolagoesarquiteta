@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Carrossel Instagram — Fabíola Góes Arquiteta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Red Hat Display', sans-serif;
+      background-color: #12100E;
+    }
+    .slide-aspect {
+      aspect-ratio: 4 / 5;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-stone-200 flex flex-col items-center justify-center p-4 sm:p-8">
+
+  <!-- Header Superior -->
+  <header class="max-w-4xl w-full text-center mb-8">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#64513D]/30 border border-[#64513D]/60 text-xs font-bold text-[#F97316] uppercase tracking-wider mb-2">
+      <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+      <span>Post 1 Pronto · Carrossel B2B</span>
+    </div>
+    <h1 class="text-2xl sm:text-4xl font-extrabold text-white">Simulador Interativo do Instagram</h1>
+    <p class="text-sm text-stone-400 mt-1 max-w-lg mx-auto">
+      Veja como o carrossel fica na tela do celular antes de postar. Use as setas ou clique nas bolinhas para navegar pelos slides.
+    </p>
+  </header>
+
+  <!-- Container Principal: Mockup Celular + Painel de Legenda -->
+  <div class="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+    <!-- COLUNA 1: O CELULAR SIMULADOR (5 cols) -->
+    <div class="lg:col-span-6 flex justify-center">
+      <div class="w-full max-w-[390px] bg-black rounded-[46px] p-3.5 shadow-2xl border-[6px] border-[#2A2421] relative">
+        
+        <!-- Notch / Ilha Superior -->
+        <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-4 bg-black rounded-full z-30"></div>
+
+        <!-- Tela do Celular -->
+        <div class="w-full bg-[#1A1614] rounded-[36px] overflow-hidden flex flex-col border border-stone-800">
+          
+          <!-- Topo do Perfil Instagram -->
+          <div class="p-3.5 flex items-center justify-between border-b border-stone-800/80 bg-[#1A1614]">
+            <div class="flex items-center gap-2.5">
+              <img src="https://fabiolagoesarquiteta.vercel.app/assets/logo-fabiola-circle.png" 
+                   alt="Logo" class="w-8 h-8 rounded-full border border-stone-700 object-cover" />
+              <div>
+                <span class="text-xs font-bold text-white block leading-tight">fabiolagoesarquiteta</span>
+                <span class="text-[10px] text-stone-400">Belém, Pará</span>
+              </div>
+            </div>
+            <i data-lucide="more-horizontal" class="w-4 h-4 text-stone-400"></i>
+          </div>
+
+          <!-- ÁREA DO SLIDE (4:5 Aspect Ratio) -->
+          <div class="relative w-full slide-aspect overflow-hidden bg-[#1E1917] select-none">
+            
+            <!-- Contador 1/5 -->
+            <div class="absolute top-4 right-4 z-20 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold text-white tracking-widest border border-white/10">
+              <span id="slideCounter">1/5</span>
+            </div>
+
+            <!-- SLIDE 1 (CAPA) -->
+            <div id="slide-1" class="carousel-slide absolute inset-0 transition-opacity duration-300 flex flex-col justify-end p-6 bg-cover bg-center"
+                 style="background-image: linear-gradient(to top, rgba(18,16,14,0.96) 20%, rgba(18,16,14,0.6) 50%, rgba(18,16,14,0.3) 100%), url('https://fabiolagoesarquiteta.vercel.app/assets/fabiola-escritorio.png');">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-[#F97316] mb-2 block">
+                ATENDIMENTO CORPORATIVO & B2B
+              </span>
+              <h2 class="text-2xl font-black text-white leading-tight mb-3">
+                Sua equipe está em outro estado.<br />
+                <span class="text-[#FAF8F5]">Sua obra está em Belém.</span>
+              </h2>
+              <p class="text-xs text-stone-300 leading-relaxed mb-4">
+                Como ter um braço técnico local na capital paraense sem precisar deslocar equipes nem abrir escritório físico na cidade.
+              </p>
+              <div class="flex items-center gap-2 text-[11px] text-[#D89C17] font-semibold">
+                <span>Arraste para entender</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div id="slide-2" class="carousel-slide absolute inset-0 transition-opacity duration-300 hidden flex flex-col justify-between p-6 bg-[#1E1917]">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-[#F97316] block mb-1">O DESAFIO DA DISTÂNCIA</span>
+                <h3 class="text-xl font-extrabold text-white leading-snug mb-3">
+                  Projetar de longe é viável.<br />Aprovar exige presença local.
+                </h3>
+                <p class="text-xs text-stone-300 leading-relaxed mb-4">
+                  Legislação municipal específica, exigências pontuais da SEURB, Corpo de Bombeiros e órgãos ambientais podem transformar um projeto impecável em meses de atraso desnecessário.
+                </p>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-[#272220] border border-[#3D3632]">
+                <div class="text-[11px] font-bold text-[#F97316] mb-1">⚠️ O risco real:</div>
+                <p class="text-[11px] text-stone-300">
+                  Viagens frequentes de profissionais, indeferimentos por desconhecimento do código de obras local e o custo da equipe parada em São Paulo, Rio ou Curitiba.
+                </p>
+              </div>
+
+              <div class="text-right text-[10px] text-stone-400 font-medium">02 · FABÍOLA GÓES</div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div id="slide-3" class="carousel-slide absolute inset-0 transition-opacity duration-300 hidden flex flex-col justify-between p-6 bg-[#1E1917]">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-[#F97316] block mb-1">O QUE NÓS ASSUMIMOS</span>
+                <h3 class="text-xl font-extrabold text-white leading-snug mb-3">
+                  Seu suporte técnico de ponta a ponta em Belém:
+                </h3>
+                <div class="space-y-2.5 text-xs text-stone-200">
+                  <div class="flex items-start gap-2 p-2 rounded-lg bg-[#272220]/70 border border-[#3D3632]">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-[#5E692E] flex-shrink-0 mt-0.5"></i>
+                    <span><strong>Viabilidade Técnica:</strong> Análise prévia dos parâmetros da SEURB.</span>
+                  </div>
+                  <div class="flex items-start gap-2 p-2 rounded-lg bg-[#272220]/70 border border-[#3D3632]">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-[#5E692E] flex-shrink-0 mt-0.5"></i>
+                    <span><strong>Adequação do Projeto Legal:</strong> Conformidade com o código de obras local.</span>
+                  </div>
+                  <div class="flex items-start gap-2 p-2 rounded-lg bg-[#272220]/70 border border-[#3D3632]">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-[#5E692E] flex-shrink-0 mt-0.5"></i>
+                    <span><strong>Tramitação Completa:</strong> Do protocolo ao Alvará e Habite-se.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right text-[10px] text-stone-400 font-medium">03 · FABÍOLA GÓES</div>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div id="slide-4" class="carousel-slide absolute inset-0 transition-opacity duration-300 hidden flex flex-col justify-between p-6 bg-[#1E1917]">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-[#5E692E] block mb-1">PARCERIA ÉTICA & TRANSPARENTE</span>
+                <h3 class="text-xl font-extrabold text-white leading-snug mb-3">
+                  Você mantém o seu cliente.<br />Nós blindamos o processo.
+                </h3>
+                <p class="text-xs text-stone-300 leading-relaxed mb-4">
+                  Não concorremos com o seu escritório pelo cliente final. Atuamos como a sua extensão técnica local com total discrição e ética profissional.
+                </p>
+                <div class="p-3 rounded-xl bg-[#64513D]/20 border border-[#64513D]/50 text-xs text-[#DAD3C7]">
+                  🏛️ <strong>+16 anos de experiência</strong> no setor público e docência em pós-graduação aplicados para que seu projeto avance sem tropeços.
+                </div>
+              </div>
+              <div class="text-right text-[10px] text-stone-400 font-medium">04 · FABÍOLA GÓES</div>
+            </div>
+
+            <!-- SLIDE 5 (CTA) -->
+            <div id="slide-5" class="carousel-slide absolute inset-0 transition-opacity duration-300 hidden flex flex-col justify-between p-6 bg-gradient-to-b from-[#1E1917] to-[#272220]">
+              <div class="text-center pt-4">
+                <div class="w-12 h-12 rounded-full bg-[#F97316]/20 text-[#F97316] flex items-center justify-center mx-auto mb-3">
+                  <i data-lucide="briefcase" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-extrabold text-white leading-tight mb-2">
+                  Vai abrir uma unidade ou iniciar obra em Belém?
+                </h3>
+                <p class="text-xs text-stone-300 leading-relaxed max-w-xs mx-auto mb-6">
+                  Tenha segurança técnica e conformidade legal desde o primeiro dia.
+                </p>
+
+                <div class="space-y-2 text-xs">
+                  <div class="p-3 rounded-xl bg-[#F97316] text-white font-bold shadow-lg">
+                    Envie uma mensagem no Direct
+                  </div>
+                  <div class="p-3 rounded-xl bg-[#1A1614] border border-stone-700 text-stone-300 font-semibold">
+                    Ou acesse o link na bio para Proposta B2B
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center text-[10px] text-stone-400">
+                Fabíola Góes Arquiteta · CAU A64582-6
+              </div>
+            </div>
+
+            <!-- Botões de Navegação Flutuantes -->
+            <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black transition-colors z-20">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center hover:bg-black transition-colors z-20">
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+
+            <!-- Bolinhas Indicadoras (Dots) -->
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20">
+              <div id="dot-1" class="w-2 h-2 rounded-full bg-[#F97316]"></div>
+              <div id="dot-2" class="w-2 h-2 rounded-full bg-stone-600"></div>
+              <div id="dot-3" class="w-2 h-2 rounded-full bg-stone-600"></div>
+              <div id="dot-4" class="w-2 h-2 rounded-full bg-stone-600"></div>
+              <div id="dot-5" class="w-2 h-2 rounded-full bg-stone-600"></div>
+            </div>
+
+          </div>
+
+          <!-- Rodapé do Post (Curtir, Comentar, Salvar) -->
+          <div class="p-3 border-t border-stone-800 flex items-center justify-between text-stone-300">
+            <div class="flex items-center gap-3">
+              <i data-lucide="heart" class="w-5 h-5 hover:text-red-500 cursor-pointer"></i>
+              <i data-lucide="message-circle" class="w-5 h-5 hover:text-white cursor-pointer"></i>
+              <i data-lucide="send" class="w-5 h-5 hover:text-white cursor-pointer"></i>
+            </div>
+            <i data-lucide="bookmark" class="w-5 h-5 hover:text-[#F97316] cursor-pointer"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUNA 2: PAINEL DE LEGENDA PRONTA (6 cols) -->
+    <div class="lg:col-span-6 space-y-6">
+
+      <!-- Caixa de Controle e Instruções -->
+      <div class="bg-[#1A1614] rounded-2xl p-6 border border-[#2A2421]">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <i data-lucide="file-text" class="w-5 h-5 text-[#F97316]"></i>
+            <span>Legenda Pronta para o Post</span>
+          </h2>
+          <button onclick="copiarLegenda()" id="btnCopy" class="px-3.5 py-1.5 rounded-lg bg-[#F97316] hover:bg-[#EA580C] text-white text-xs font-bold flex items-center gap-1.5 transition-colors shadow">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span id="btnText">Copiar Legenda</span>
+          </button>
+        </div>
+
+        <div class="bg-[#12100E] p-4 rounded-xl border border-stone-800 text-xs text-stone-300 leading-relaxed font-mono whitespace-pre-wrap max-h-96 overflow-y-auto" id="legendaTexto">Sua empresa ou escritório foi contratado para um projeto em Belém, mas você não tem equipe técnica na cidade?
+
+A aprovação de projetos legais e o licenciamento de obras exigem conhecimento minucioso dos procedimentos da SEURB, Corpo de Bombeiros e órgãos ambientais municipais. Tentar conduzir isso à distância costuma gerar atrasos no cronograma e custos imprevistos com viagens.
+
+No escritório Fabíola Góes Arquiteta, atuamos como o parceiro técnico local para empresas e escritórios de todo o Brasil que precisam implantar unidades, reformar lojas ou licenciar empreendimentos em Belém.
+
+Como funciona a parceria:
+✔ Você mantém a autoria do projeto executivo e o relacionamento com seu cliente;
+✔ Nós assumimos a adequação às normas locais, protocolos, vistorias e condução do processo;
+✔ Comunicação transparente e relatórios de acompanhamento passo a passo.
+
+Tem uma demanda em andamento na capital paraense? Envie uma mensagem direta aqui no Instagram ou acesse o link no perfil para solicitar uma apresentação técnica institucional.
+
+#arquiteturabelem #licenciamentodeobras #seurb #regularizacaodeimoveis #arquitetosbelem #engenhariacivil #franquiasbrasil #obrasbelem #expansaodefranquias</div>
+      </div>
+
+      <!-- Card com Dicas Práticas de Postagem -->
+      <div class="bg-[#1A1614] rounded-2xl p-6 border border-[#2A2421] space-y-3">
+        <h3 class="text-sm font-bold text-white flex items-center gap-2">
+          <i data-lucide="lightbulb" class="w-4 h-4 text-[#D89C17]"></i>
+          <span>Instruções Práticas para a Fabíola:</span>
+        </h3>
+        <ul class="text-xs text-stone-300 space-y-2 list-disc list-inside">
+          <li><strong>Melhor dia/horário:</strong> Terça ou Quinta-feira, entre 11h30 e 13h00 (horário que engenheiros e diretores de expansão fazem pausa e checam o celular).</li>
+          <li><strong>Como fixar:</strong> Assim que postar, clique nos 3 pontinhos do post e selecione <em>"Fixar no seu perfil"</em> (ele deve ser o primeiro ou segundo post fixado).</li>
+          <li><strong>Stories de apoio:</strong> No mesmo dia, compartilhe o post nos Stories com a legenda: <em>"Seu escritório atua fora do Pará e tem projetos em Belém? Veja como ajudamos parceiros técnicos por aqui."</em></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    let currentSlide = 1;
+    const totalSlides = 5;
+
+    function showSlide(n) {
+      currentSlide = n;
+      if (currentSlide > totalSlides) currentSlide = 1;
+      if (currentSlide < 1) currentSlide = totalSlides;
+
+      for (let i = 1; i <= totalSlides; i++) {
+        const slide = document.getElementById(`slide-${i}`);
+        const dot = document.getElementById(`dot-${i}`);
+        if (i === currentSlide) {
+          slide.classList.remove('hidden');
+          dot.classList.remove('bg-stone-600');
+          dot.classList.add('bg-[#F97316]');
+        } else {
+          slide.classList.add('hidden');
+          dot.classList.remove('bg-[#F97316]');
+          dot.classList.add('bg-stone-600');
+        }
+      }
+
+      document.getElementById('slideCounter').innerText = `${currentSlide}/${totalSlides}`;
+    }
+
+    function nextSlide() { showSlide(currentSlide + 1); }
+    function prevSlide() { showSlide(currentSlide - 1); }
+
+    function copiarLegenda() {
+      const texto = document.getElementById('legendaTexto').innerText;
+      navigator.clipboard.writeText(texto).then(() => {
+        const btn = document.getElementById('btnText');
+        btn.innerText = 'Copiado!';
+        setTimeout(() => { btn.innerText = 'Copiar Legenda'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
