@@ -2,9 +2,19 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Fabíola Góes Arquitetura | Projeto, Licenciamento e Regularização em Belém - PA</title>
   <meta name="description" content="Escritório de arquitetura em Belém especializado em Projetos Arquitetônicos, Regularização de Imóveis, Alvarás e Habite-se. Mais de 15 anos de experiência com a Arquiteta Fabíola Góes." />
+
+  <!-- Google tag (gtag.js) - Google Analytics 4 Oficial Fabíola Góes -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXXNHC8SMZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BXXNHC8SMZ');
+  </script>
+
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/cropped-SIMBOLO-BEGE-42x42.png" />
@@ -44,7 +54,7 @@
 
       // 3. Google Analytics 4 (GA4)
       // Exemplo: 'G-XXXXXXXXXX'
-      GA4_ID: '',
+      GA4_ID: 'G-BXXNHC8SMZ',
 
       // 4. Google Ads (ID de Conversão / Remarketing)
       // Exemplo: 'AW-XXXXXXXXXX'
@@ -147,7 +157,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
 </head>
 <body class="bg-[#FAF8F5] text-[#191B1A] antialiased selection:bg-[#C5A880] selection:text-white">
 
@@ -169,27 +179,24 @@
       <a href="#inicio" class="flex items-center gap-3 group">
         <img src="assets/logo-marca-fg.png" alt="Logo Fabíola Góes Arquitetura" class="w-10 h-10 object-contain group-hover:scale-105 transition-transform drop-shadow" />
         <div class="flex flex-col">
-          <span class="block text-base sm:text-lg font-bold tracking-[0.16em] text-white uppercase leading-none group-hover:text-[#C5A880] transition-colors">Fabíola Goes</span>
+          <span class="block text-base sm:text-lg font-bold tracking-[0.16em] text-white uppercase leading-none group-hover:text-[#F97316] transition-colors duration-300">Fabíola Goes</span>
           <span class="block text-[9px] sm:text-[10px] tracking-[0.28em] text-stone-300 uppercase font-medium mt-1">Arquitetura</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation Links (Pílula Central Exata do Mockup) -->
-      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 bg-stone-900/80 border border-white/10 px-4 py-1.5 rounded-full text-xs lg:text-sm font-medium text-stone-300 shadow-inner">
-        <a href="#inicio" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Início</a>
-        <a href="#projetos" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Projetos</a>
-        <a href="#servicos" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Serviços</a>
-        <a href="#regularizacao" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
-          <span>Regularização</span>
-          <span class="text-[9px] bg-[#C5A880]/25 text-[#E6CDAA] px-1.5 py-0.5 rounded font-bold">Quiz</span>
-        </a>
-        <a href="#profissionais" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Cursos</a>
+      <!-- Desktop Navigation Links (Pílula Central Exata do Mockup da Fabíola) -->
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 bg-stone-900/80 border border-white/10 px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium text-stone-300 shadow-inner">
+        <a href="#inicio" class="px-4 py-1 rounded-full bg-white text-[#141615] font-semibold shadow transition-all">Início</a>
+        <a href="#projetos" class="px-3.5 py-1.5 rounded-full hover:text-[#F97316] hover:bg-white/5 transition-colors duration-200">Projetos</a>
+        <a href="#servicos" class="px-3.5 py-1.5 rounded-full hover:text-[#F97316] hover:bg-white/5 transition-colors duration-200">Serviços</a>
+        <a href="#regularizacao" class="px-3.5 py-1.5 rounded-full hover:text-[#F97316] hover:bg-white/5 transition-colors duration-200">Regularização</a>
+        <a href="#profissionais" class="px-3.5 py-1.5 rounded-full hover:text-[#F97316] hover:bg-white/5 transition-colors duration-200">Cursos</a>
       </nav>
 
       <!-- Right Action CTA Button -->
       <div class="flex items-center gap-3">
         <a href="#orcamento" 
-           class="inline-flex items-center gap-2 bg-[#FAF8F5] text-[#141615] px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold hover:bg-[#C5A880] hover:text-white transition-all shadow-md group">
+           class="hidden sm:inline-flex items-center gap-2 bg-[#FAF8F5] text-[#141615] px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold hover:bg-[#F97316] hover:text-white transition-all shadow-md group">
           <span>Solicitar orçamento</span>
           <i data-lucide="arrow-up-right" class="w-4 h-4 text-[#C5A880] group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
         </a>
@@ -217,18 +224,18 @@
       </button>
     </div>
     <div class="flex flex-col space-y-5 text-xl font-medium mt-8">
-      <a href="#inicio" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Início</a>
-      <a href="#projetos" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Projetos & Obras</a>
-      <a href="#servicos" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Serviços</a>
+      <a href="#inicio" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Início</a>
+      <a href="#projetos" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Projetos & Obras</a>
+      <a href="#servicos" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Serviços</a>
       <a href="#regularizacao" class="mobile-nav-link hover:text-[#C5A880] transition-colors flex items-center justify-between">
         <span>Diagnóstico de Regularização</span>
         <span class="text-xs bg-[#C5A880] text-black px-2 py-0.5 rounded-full font-bold">Quiz 1 min</span>
       </a>
-      <a href="#orcamento" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Orçamento Guiado</a>
-      <a href="#comofunciona" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Como Funciona</a>
-      <a href="#profissionais" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Cursos & Mentorias</a>
-      <a href="#sobre" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Sobre a Arquiteta</a>
-      <a href="#contato" class="mobile-nav-link hover:text-[#C5A880] transition-colors">Contato & Localização</a>
+      <a href="#orcamento" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Orçamento Guiado</a>
+      <a href="#comofunciona" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Como Funciona</a>
+      <a href="#profissionais" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Cursos & Mentorias</a>
+      <a href="#sobre" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Sobre a Arquiteta</a>
+      <a href="#contato" class="mobile-nav-link hover:text-[#F97316] transition-colors duration-200">Contato & Localização</a>
     </div>
     <div class="mt-auto pt-8 border-t border-stone-800 flex flex-col gap-3">
       <a href="https://wa.me/5591982324820" target="_blank" class="w-full bg-[#25D366] text-white py-3 rounded-full text-center font-semibold flex items-center justify-center gap-2">
@@ -238,49 +245,45 @@
     </div>
   </div>
 
-  <section id="inicio" class="relative bg-[#141615] text-[#FAF8F5] min-h-[90vh] flex flex-col justify-between overflow-hidden">
+  <section id="inicio" class="relative bg-[#141615] text-[#FAF8F5] min-h-[92vh] flex flex-col justify-between overflow-hidden">
     
-    <!-- Background Image: Limpa em Alta Resolução (Sem botões ou textos duplicados fantasma) -->
+    <!-- Background Image: A foto original da casa em altíssima definição, limpa de qualquer texto e com iluminação natural clara e acolhedora -->
     <div class="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" 
+      <img src="assets/hero-house-bg.jpg?v=4" 
            alt="Projeto Arquitetônico Contemporâneo Fabíola Góes" 
-           class="w-full h-full object-cover object-center brightness-[0.34] contrast-105" />
-      <div class="absolute inset-0 bg-gradient-to-r from-[#141615] via-[#141615]/85 to-transparent"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#141615] via-transparent to-black/40"></div>
+           class="w-full h-full object-cover object-center brightness-100 contrast-100" />
+      <!-- Filtro sutilíssimo apenas na lateral esquerda para contraste perfeito dos textos brancos sem escurecer a arquitetura da casa -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/15 via-40% to-transparent pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
     </div>
 
-    <!-- Hero Content: 2 Colunas (Texto à Esquerda // Foto Recortada à Direita) -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8 flex-1 flex flex-col justify-center w-full">
+    <!-- Hero Content: 2 Colunas (Texto à Esquerda // Foto Recortada da Fabíola à Direita) -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 sm:pt-20 pb-4 flex-1 flex flex-col justify-center w-full">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
         
-        <!-- Coluna Esquerda: Cópia e CTA Oficial -->
-        <div class="lg:col-span-7 pb-4 lg:pb-10 hero-fade-left">
+        <!-- Coluna Esquerda: Tagline, Título e CTA Oficial idênticos ao Mockup Aprovado -->
+        <div class="lg:col-span-7 pb-4 lg:pb-12 hero-fade-left">
           
           <!-- Badge Tagline Oficial -->
-          <div class="inline-flex items-center gap-2 mb-6 border-b border-stone-400/30 pb-2">
-            <span class="text-xs uppercase tracking-[0.28em] text-[#C5A880] font-semibold">
-              PROJETO · LICENCIAMENTO · REGULARIZAÇÃO · BELÉM
+          <div class="inline-flex max-w-full items-center gap-2 mb-6 border-b border-white/20 pb-2 overflow-hidden">
+            <span class="text-[10px] sm:text-xs uppercase tracking-[0.14em] sm:tracking-[0.28em] text-white/90 font-semibold drop-shadow break-words">
+              — PROJETO · LICENCIAMENTO · REGULARIZAÇÃO · BELÉM
             </span>
           </div>
 
-          <!-- Headline Principal Oficial do PDF -->
-          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.04] mb-6">
+          <!-- Headline Principal Oficial -->
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.02] mb-8 font-sans drop-shadow-[0_3px_15px_rgba(0,0,0,0.7)]">
             Arquitetura<br />
-            <span class="text-stone-300 font-light">que resolve.</span>
+            <span class="text-white font-light">que resolve.</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-stone-300 font-light max-w-xl mb-8 leading-relaxed">
-            Do primeiro traço ao imóvel regularizado. Projetos modernos, alvarás sem burocracia e aprovação legal na Prefeitura de Belém.
-          </p>
-
-          <!-- Botões de Ação -->
-          <div class="flex flex-wrap items-center gap-4">
-            <a href="#projetos" class="inline-flex items-center gap-2 bg-[#FAF8F5] text-[#141615] px-7 py-3.5 rounded-full text-base font-semibold hover:bg-[#C5A880] hover:text-white transition-all shadow-lg hover:shadow-xl group">
+          <!-- Botão de Ação: Conheça os projetos com badge de seta circular exatamente como no PDF -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#projetos" class="inline-flex items-center gap-3 bg-[#FAF8F5] text-[#141615] pl-7 pr-3 py-3 rounded-full text-sm sm:text-base font-semibold hover:bg-[#F97316] hover:text-white transition-all shadow-xl hover:shadow-2xl group">
               <span>Conheça os projetos</span>
-              <i data-lucide="arrow-up-right" class="w-4 h-4 text-[#8F7450] group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-            </a>
-            <a href="#orcamento" class="inline-flex items-center gap-2 border border-stone-400/50 text-stone-200 px-7 py-3.5 rounded-full text-base font-medium hover:bg-white/10 transition-all backdrop-blur-sm">
-              <span>Simular Orçamento</span>
+              <span class="w-8 h-8 rounded-full bg-[#141615] text-white group-hover:bg-white group-hover:text-[#F97316] flex items-center justify-center transition-colors shadow">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </span>
             </a>
           </div>
         </div>
@@ -288,17 +291,17 @@
         <!-- Coluna Direita: Foto da Fabíola com Sobreposição na Barra Inferior -->
         <div class="lg:col-span-5 relative flex flex-col items-center lg:items-end justify-end hero-fade-right">
           
-          <!-- Frase de Destaque no Topo da Foto (Página 1 do PDF) -->
-          <div class="hidden sm:block absolute top-2 right-2 bg-[#141615]/85 backdrop-blur-md border border-white/10 px-4 py-2 rounded-2xl shadow-xl z-20 text-right">
-            <span class="text-xs text-stone-200 font-medium block">Do primeiro traço</span>
-            <span class="text-[11px] text-[#C5A880] font-semibold block">ao imóvel regularizado.</span>
+          <!-- Frase de Destaque Oficial ao lado do braço da Fabíola (Exatamente como no slide aprovado) -->
+          <div class="hidden lg:block absolute -right-2 bottom-8 text-right z-20 pointer-events-none drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+            <span class="text-sm text-stone-200 font-light block">Do primeiro traço</span>
+            <span class="text-sm text-white font-bold block">ao imóvel regularizado.</span>
           </div>
 
-          <!-- Foto Recortada da Fabíola: z-10 com margem negativa para mergulhar por trás da barra -->
-          <div class="relative z-10 -mb-6 sm:-mb-10 lg:-mb-16 max-w-[320px] sm:max-w-[380px] lg:max-w-[420px]">
-            <img src="assets/fabiola-hero-cutout.png" 
+          <!-- Foto Recortada da Fabíola: z-10 mergulhando suavemente na barra inferior -->
+          <div class="relative z-10 -mb-6 sm:-mb-10 lg:-mb-14 w-full max-w-[340px] sm:max-w-[420px] lg:max-w-[480px]">
+            <img src="assets/fabiola-hero-cutout.png?v=4" 
                  alt="Arquiteta Fabíola Góes em Belém" 
-                 class="w-full h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.65)] filter contrast-105" />
+                 class="w-full h-auto object-contain drop-shadow-[0_20px_45px_rgba(0,0,0,0.7)] filter contrast-105" />
           </div>
         </div>
 
@@ -577,19 +580,20 @@
           <div class="mb-4">
             <img src="assets/logo-marca-fg-dark.png" alt="Logo Fabíola Góes" class="w-12 h-12 object-contain" />
           </div>
-          <span class="text-xs uppercase tracking-[0.25em] text-[#C5A880] font-bold block mb-2">PROJETOS SELECIONADOS</span>
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
-            Obras que contam<br />como a gente trabalha.
+          <span class="text-xs uppercase tracking-[0.28em] text-[#8F7450] font-bold block mb-2.5">PROJETOS SELECIONADOS</span>
+          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-[#141615] leading-[1.12]">
+            Obras que contam<br />
+            <span class="text-[#8F7450] font-light">como a gente trabalha.</span>
           </h2>
         </div>
 
-        <!-- Filter Buttons -->
+        <!-- Filter Buttons (Pílulas Refinadas com a Paleta Oficial: Alto Contraste & Hover Cobre) -->
         <div class="flex flex-wrap items-center gap-2">
-          <button data-filter="todos" class="filter-btn bg-white text-black px-4 py-2 rounded-full text-xs font-semibold border border-white transition-all">Todos</button>
-          <button data-filter="residencial" class="filter-btn bg-transparent text-stone-300 px-4 py-2 rounded-full text-xs font-semibold border border-stone-700 hover:border-stone-500 transition-all">Residencial</button>
-          <button data-filter="interiores" class="filter-btn bg-transparent text-stone-300 px-4 py-2 rounded-full text-xs font-semibold border border-stone-700 hover:border-stone-500 transition-all">Interiores</button>
-          <button data-filter="comercial" class="filter-btn bg-transparent text-stone-300 px-4 py-2 rounded-full text-xs font-semibold border border-stone-700 hover:border-stone-500 transition-all">Comercial</button>
-          <button data-filter="regularizacao" class="filter-btn bg-transparent text-stone-300 px-4 py-2 rounded-full text-xs font-semibold border border-stone-700 hover:border-stone-500 transition-all">Regularização</button>
+          <button data-filter="todos" class="filter-btn active bg-[#141615] text-white px-5 py-2.5 rounded-full text-xs font-semibold border border-[#141615] shadow-md transition-all">Todos</button>
+          <button data-filter="residencial" class="filter-btn bg-white text-[#141615] hover:text-[#F97316] hover:border-[#F97316] border border-stone-300 px-5 py-2.5 rounded-full text-xs font-semibold transition-all shadow-sm">Residencial</button>
+          <button data-filter="interiores" class="filter-btn bg-white text-[#141615] hover:text-[#F97316] hover:border-[#F97316] border border-stone-300 px-5 py-2.5 rounded-full text-xs font-semibold transition-all shadow-sm">Interiores</button>
+          <button data-filter="comercial" class="filter-btn bg-white text-[#141615] hover:text-[#F97316] hover:border-[#F97316] border border-stone-300 px-5 py-2.5 rounded-full text-xs font-semibold transition-all shadow-sm">Comercial</button>
+          <button data-filter="regularizacao" class="filter-btn bg-white text-[#141615] hover:text-[#F97316] hover:border-[#F97316] border border-stone-300 px-5 py-2.5 rounded-full text-xs font-semibold transition-all shadow-sm">Regularização</button>
         </div>
       </div>
 
@@ -669,40 +673,63 @@
         </div>
 
         <!-- Card 5: COMPARADOR ANTES / DEPOIS (Página 3 - Casa Jardim) -->
-        <div class="project-card lg:col-span-2 group relative rounded-2xl overflow-hidden bg-stone-900 border border-white/10 aspect-[16/9] md:aspect-auto h-[320px] md:h-auto" data-category="regularizacao">
+        <div id="beforeAfterCard" 
+             class="project-card md:col-span-2 lg:col-span-2 group relative rounded-2xl overflow-hidden bg-stone-900 border border-white/10 aspect-[16/9] min-h-[340px] md:min-h-[400px] lg:aspect-auto lg:min-h-0 lg:h-full select-none" 
+             data-category="regularizacao">
           
-          <!-- Interactive Before & After Slider Container -->
-          <div id="beforeAfterContainer" class="before-after-container w-full h-full">
-            <!-- After (Background) -->
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" 
-                 alt="Depois - Reforma e Regularização Concluída" />
-            <div class="absolute top-4 right-4 bg-emerald-600/90 backdrop-blur-md text-white text-xs uppercase px-3 py-1 rounded-full font-bold tracking-wider z-20">
-              Depois (Concluído & Regularizado)
+          <!-- Image 1: DEPOIS (Reformado / Concluído) - Base Layer 100% Nítida -->
+          <img id="imgDepois" 
+               src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" 
+               alt="Depois - Reforma e Regularização Concluída" 
+               class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+
+          <!-- Image 2: ANTES (Original / Imóvel Antigo) - Top Layer with Crossfade -->
+          <img id="imgAntes" 
+               src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" 
+               alt="Antes - Imóvel Antigo sem Habite-se" 
+               class="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-500 ease-in-out group-hover:scale-105 opacity-100 z-10" />
+
+          <!-- Gradient overlay for text legibility -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/30 pointer-events-none z-20"></div>
+
+          <!-- Top Header: Status Badge & Segmented Switcher Buttons -->
+          <div class="absolute top-3 inset-x-3 sm:top-4 sm:inset-x-4 flex items-center justify-between z-30 pointer-events-auto gap-2">
+            <!-- Dynamic State Badge -->
+            <div id="badgeState" 
+                 class="flex items-center gap-1.5 bg-stone-900/90 text-[#C5A880] border border-[#C5A880]/30 text-[11px] sm:text-xs px-3 sm:px-3.5 py-1.5 rounded-full font-bold uppercase tracking-wider backdrop-blur-md shadow-lg transition-all duration-300">
+              <span id="badgeStateDot" class="w-2 h-2 rounded-full bg-[#C5A880]"></span>
+              <span id="badgeStateText">Antes (Original)</span>
             </div>
 
-            <!-- Before (Overlay) -->
-            <div id="beforeAfterOverlay" class="before-after-overlay w-1/2">
-              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" 
-                   alt="Antes - Imóvel Antigo sem Habite-se" />
-              <div class="absolute top-4 left-4 bg-stone-900/90 backdrop-blur-md text-stone-300 text-xs uppercase px-3 py-1 rounded-full font-bold tracking-wider z-20">
-                Antes (Irregular / Reforma)
-              </div>
-            </div>
-
-            <!-- Draggable Divider Line -->
-            <div id="beforeAfterSlider" class="before-after-slider left-1/2">
-              <div class="before-after-handle">
-                <i data-lucide="chevrons-left-right" class="w-5 h-5 text-stone-800"></i>
-              </div>
+            <!-- Segmented Pill Button Switcher -->
+            <div class="inline-flex p-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 shadow-xl">
+              <button type="button" id="btnShowAntes" 
+                      class="px-3.5 sm:px-4 py-1 text-xs font-bold rounded-full transition-all duration-300 bg-[#C5A880] text-stone-950 shadow-md cursor-pointer">
+                Antes
+              </button>
+              <button type="button" id="btnShowDepois" 
+                      class="px-3.5 sm:px-4 py-1 text-xs font-semibold rounded-full transition-all duration-300 text-stone-300 hover:text-white cursor-pointer">
+                Depois
+              </button>
             </div>
           </div>
 
-          <!-- Bottom caption -->
-          <div class="absolute bottom-4 left-6 z-20 pointer-events-none">
-            <span class="text-xs uppercase tracking-widest text-[#C5A880] font-mono block">05 · ANTES / DEPOIS</span>
-            <h3 class="text-xl font-bold text-white">Casa Jardim</h3>
-            <p class="text-xs text-stone-300">Reforma, ampliação e habite-se · Belém, PA</p>
+          <!-- Bottom Caption -->
+          <div class="absolute bottom-3 left-4 right-4 sm:bottom-4 sm:left-6 sm:right-6 z-30 flex items-end justify-between pointer-events-none">
+            <div class="pr-2">
+              <span class="text-xs uppercase tracking-widest text-[#C5A880] font-mono block mb-0.5">05 · ANTES / DEPOIS</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-white leading-tight">Casa Jardim</h3>
+              <p id="captionDescription" class="text-xs text-stone-300 transition-colors duration-300 line-clamp-1 sm:line-clamp-none">
+                Imóvel irregular antes da consultoria e projeto de adequação
+              </p>
+            </div>
+            <!-- Quick Toggle Button -->
+            <button type="button" id="btnQuickToggle" aria-label="Alternar foto de Antes e Depois"
+                    class="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-full bg-white/15 hover:bg-[#C5A880] hover:text-stone-950 active:scale-95 backdrop-blur-md flex items-center justify-center text-white border border-white/20 shadow-md transition-all pointer-events-auto cursor-pointer">
+              <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+            </button>
           </div>
+
         </div>
 
       </div>
@@ -765,10 +792,10 @@
               <!-- Question 1 -->
               <div>
                 <label class="block text-sm font-semibold text-stone-200 mb-3">1. O imóvel possui Habite-se expedido pela Prefeitura?</label>
-                <div class="grid grid-cols-3 gap-3">
-                  <button type="button" data-quiz-group="habite-se" data-value="Sim" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Sim</button>
-                  <button type="button" data-quiz-group="habite-se" data-value="Não" class="py-3 px-4 rounded-xl bg-stone-100 text-black font-semibold text-sm transition-all text-center">Não</button>
-                  <button type="button" data-quiz-group="habite-se" data-value="Não sei" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Não sei</button>
+                <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                  <button type="button" data-quiz-group="habite-se" data-value="Sim" class="py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl bg-stone-800 text-stone-300 text-xs sm:text-sm font-medium hover:bg-stone-700 transition-all text-center">Sim</button>
+                  <button type="button" data-quiz-group="habite-se" data-value="Não" class="py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl bg-stone-100 text-black font-semibold text-xs sm:text-sm transition-all text-center">Não</button>
+                  <button type="button" data-quiz-group="habite-se" data-value="Não sei" class="py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl bg-stone-800 text-stone-300 text-xs sm:text-sm font-medium hover:bg-stone-700 transition-all text-center">Não sei</button>
                 </div>
               </div>
 
@@ -784,10 +811,10 @@
               <!-- Question 3 -->
               <div>
                 <label class="block text-sm font-semibold text-stone-200 mb-3">3. Qual a sua intenção principal com o imóvel?</label>
-                <div class="grid grid-cols-3 gap-3">
-                  <button type="button" data-quiz-group="objetivo" data-value="Vender" class="py-3 px-4 rounded-xl bg-stone-100 text-black font-semibold text-sm transition-all text-center">Vender</button>
-                  <button type="button" data-quiz-group="objetivo" data-value="Financiar" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Financiar</button>
-                  <button type="button" data-quiz-group="objetivo" data-value="Regularizar" class="py-3 px-4 rounded-xl bg-stone-800 text-stone-300 text-sm font-medium hover:bg-stone-700 transition-all text-center">Apenas regularizar</button>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
+                  <button type="button" data-quiz-group="objetivo" data-value="Vender" class="py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl bg-stone-100 text-black font-semibold text-xs sm:text-sm transition-all text-center">Vender</button>
+                  <button type="button" data-quiz-group="objetivo" data-value="Financiar" class="py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl bg-stone-800 text-stone-300 text-xs sm:text-sm font-medium hover:bg-stone-700 transition-all text-center">Financiar</button>
+                  <button type="button" data-quiz-group="objetivo" data-value="Regularizar" class="py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl bg-stone-800 text-stone-300 text-xs sm:text-sm font-medium hover:bg-stone-700 transition-all text-center">Apenas regularizar</button>
                 </div>
               </div>
 
@@ -923,7 +950,13 @@
           <!-- Step 4: Nome do Cliente -->
           <div>
             <label class="block text-xs uppercase tracking-wider font-bold text-stone-500 mb-2">Seu Nome</label>
-            <input id="orderNameInput" type="text" value="Ana Souza" placeholder="Digite seu nome" class="w-full p-3.5 rounded-xl border border-stone-300 bg-stone-50 text-stone-900 text-sm focus:outline-none" />
+            <div class="relative">
+              <input id="orderNameInput" type="text" value="Ana Souza" placeholder="Digite seu nome completo" class="w-full p-3.5 pr-48 rounded-xl border border-stone-300 bg-stone-50 text-stone-900 text-sm focus:outline-none focus:border-[#C5A880] focus:bg-white transition-all cursor-text" />
+              <div id="orderNameCta" class="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-stone-400 font-mono flex items-center gap-1 select-none transition-opacity duration-200">
+                <span class="hidden sm:inline">&lt;= Insira seu nome aqui</span>
+                <span class="sm:hidden">&lt;= Seu nome</span>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -975,7 +1008,7 @@
               <!-- Incoming Message (Fabíola Response) -->
               <div class="chat-bubble-in p-3 mr-4">
                 <p class="leading-relaxed">
-                  Oi, Ana! Recebi seus dados com sucesso. Vou analisar e te enviar uma proposta detalhada com carinho! 😊
+                  <span id="wpFabiolaGreeting">Oi, Ana!</span> Recebi seus dados com sucesso. Vou analisar e te enviar uma proposta detalhada com carinho! 😊
                 </p>
                 <div class="text-[9px] text-stone-400 text-right mt-1">
                   <span>10:47</span>
@@ -1058,38 +1091,94 @@
       </div>
 
       <!-- Prova Social & Avaliações Google (Page 6) -->
-      <div class="bg-stone-900/90 rounded-3xl p-8 sm:p-12 border border-stone-800">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="bg-stone-900/90 rounded-3xl p-8 sm:p-12 border border-stone-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
-          <div class="lg:col-span-3 border-b lg:border-b-0 lg:border-r border-stone-800 pb-6 lg:pb-0 lg:pr-8">
-            <div class="text-5xl font-extrabold text-white">5,0</div>
-            <div class="flex text-amber-400 text-lg my-1">★★★★★</div>
-            <div class="text-xs text-stone-400 leading-relaxed">
-              Avaliações reais no Google exibidas com transparência
+          <div class="lg:col-span-3 border-b lg:border-b-0 lg:border-r border-stone-800 pb-6 lg:pb-0 lg:pr-8 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xs uppercase tracking-widest text-[#C5A880] font-mono font-bold">PROVA REAL</span>
+              </div>
+              <div class="text-5xl font-extrabold text-white">5,0</div>
+              <div class="flex text-amber-400 text-lg my-1.5">★★★★★</div>
+              <p class="text-xs text-stone-400 leading-relaxed">
+                Avaliações autênticas e verificadas de clientes no Google Meu Negócio.
+              </p>
+            </div>
+            <div class="pt-6">
+              <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LCnPqKxKTzM1YLRSNaiwNEo0sUgxNzVOSjNIs7BMszKoMLNINTJKTDRMSjZOTLJMTfbiSUtMyszPSVRIz08tBgC22hTp&q=fabiola+goes" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="inline-flex items-center gap-2 text-xs font-semibold text-[#C5A880] hover:text-white transition-colors duration-200 group">
+                <span>Ver avaliações no Google</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200"></i>
+              </a>
             </div>
           </div>
 
           <div class="lg:col-span-9 grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <div class="p-4 bg-stone-950/60 rounded-xl border border-stone-800/80">
-              <p class="text-xs text-stone-300 italic mb-4 leading-relaxed">
-                “A Fabíola me ajudou muito na regularização do meu imóvel. Ela tem muito domínio na área. É uma excelente profissional.”
-              </p>
-              <div class="text-[10px] uppercase font-bold text-[#C5A880]">CLIENTE · GOOGLE</div>
+            <!-- Depoimento 1: Azenil Carvalho -->
+            <div class="p-5 sm:p-6 bg-stone-950/70 rounded-2xl border border-stone-800/90 shadow-md hover:border-[#C5A880]/40 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-3">
+                  <img src="assets/avatar-azenil-carvalho.png" alt="Azenil Carvalho" class="w-10 h-10 rounded-full object-cover border border-[#C5A880]/40 shrink-0" />
+                  <div>
+                    <div class="text-sm font-bold text-white leading-tight">Azenil Carvalho</div>
+                    <div class="text-[11px] text-stone-400">Avaliação Google • 5★</div>
+                  </div>
+                </div>
+                <div class="flex text-amber-400 text-xs mb-3">★★★★★</div>
+                <p class="text-xs text-stone-300 italic leading-relaxed">
+                  “Uma das mais experientes profissionais na área. Aplica toda a vivência da época em que atuou como analista da Prefeitura, agora com muita prática e soluções inteligentes para os casos concretos. Além dos projetos incríveis, atua em Construções Financiadas pela Caixa com competência e técnica.”
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-stone-800/60 flex items-center justify-between text-[10px]">
+                <span class="font-bold text-[#C5A880] uppercase tracking-wider">Regularização & Financiamento</span>
+                <span class="text-stone-500">Março / 2023</span>
+              </div>
             </div>
 
-            <div class="p-4 bg-stone-950/60 rounded-xl border border-stone-800/80">
-              <p class="text-xs text-stone-300 italic mb-4 leading-relaxed">
-                “Mesmo com o espaço muito pequeno, ela conseguiu aproveitar cada centímetro e entregar um projeto lindo e aprovado rápido.”
-              </p>
-              <div class="text-[10px] uppercase font-bold text-[#C5A880]">CLIENTE · GOOGLE</div>
+            <!-- Depoimento 2: Adam Manfredi -->
+            <div class="p-5 sm:p-6 bg-stone-950/70 rounded-2xl border border-stone-800/90 shadow-md hover:border-[#C5A880]/40 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-3">
+                  <img src="assets/avatar-adam-manfredi.png" alt="Adam Manfredi" class="w-10 h-10 rounded-full object-cover border border-[#C5A880]/40 shrink-0" />
+                  <div>
+                    <div class="text-sm font-bold text-white leading-tight">Adam Manfredi</div>
+                    <div class="text-[11px] text-stone-400">Avaliação Google • 5★</div>
+                  </div>
+                </div>
+                <div class="flex text-amber-400 text-xs mb-3">★★★★★</div>
+                <p class="text-xs text-stone-300 italic leading-relaxed">
+                  “A Fabíola me ajudou muito na regularização do meu imóvel. Ela tem muito domínio na área. É uma excelente profissional. A Fabíola tem toda a expertise pra deixar o seu imóvel regular.”
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-stone-800/60 flex items-center justify-between text-[10px]">
+                <span class="font-bold text-[#C5A880] uppercase tracking-wider">Regularização de Imóvel</span>
+                <span class="text-stone-500">2025</span>
+              </div>
             </div>
 
-            <div class="p-4 bg-stone-950/60 rounded-xl border border-stone-800/80">
-              <p class="text-xs text-stone-300 italic mb-4 leading-relaxed">
-                “Projeto feito com atenção, criatividade e beleza. Nós amamos! Sem contar que o atendimento foi impecável do início ao fim.”
-              </p>
-              <div class="text-[10px] uppercase font-bold text-[#C5A880]">CLIENTE · GOOGLE</div>
+            <!-- Depoimento 3: João Bruno Costa -->
+            <div class="p-5 sm:p-6 bg-stone-950/70 rounded-2xl border border-stone-800/90 shadow-md hover:border-[#C5A880]/40 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-3">
+                  <img src="assets/avatar-joao-bruno-costa.png" alt="João Bruno Costa" class="w-10 h-10 rounded-full object-cover border border-[#C5A880]/40 shrink-0" />
+                  <div>
+                    <div class="text-sm font-bold text-white leading-tight">João Bruno Costa</div>
+                    <div class="text-[11px] text-stone-400">Avaliação Google • 5★</div>
+                  </div>
+                </div>
+                <div class="flex text-amber-400 text-xs mb-3">★★★★★</div>
+                <p class="text-xs text-stone-300 italic leading-relaxed">
+                  “Excelente profissional, rápida e eficiente. Salvou minha vida na condução do processo.”
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-stone-800/60 flex items-center justify-between text-[10px]">
+                <span class="font-bold text-[#C5A880] uppercase tracking-wider">Agilidade & Eficiência</span>
+                <span class="text-stone-500">Agosto / 2025</span>
+              </div>
             </div>
 
           </div>
@@ -1110,10 +1199,10 @@
         
         <!-- Left: Image & Copy -->
         <div class="lg:col-span-6">
-          <div class="rounded-3xl overflow-hidden shadow-lg border border-stone-200 mb-8 max-h-[360px]">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" 
+          <div class="rounded-3xl overflow-hidden shadow-md border border-stone-200/80 mb-8">
+            <img src="assets/mesa-projetos-plantas.jpg?v=1" 
                  alt="Mesa de Trabalho com Projetos e Plantas Arquitetônicas" 
-                 class="w-full h-full object-cover" />
+                 class="w-full h-auto object-cover rounded-3xl transition-transform duration-500 hover:scale-[1.02]" />
           </div>
           <!-- Logo da Marca na Seção (Anotação oficial da Fabíola: Manter a logo em todas as seções) -->
         <div class="mb-4">
@@ -1193,15 +1282,15 @@
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Portrait Photo -->
+        <!-- Portrait Photo: Foto Editorial no Escritório com Diplomas e Planta Aberta -->
         <div class="lg:col-span-5">
           <div class="relative mx-auto max-w-md">
-            <div class="aspect-square rounded-3xl overflow-hidden bg-stone-100 border-4 border-stone-200 shadow-xl">
-              <img src="assets/Intersect-1.png" 
-                   alt="Arquiteta Fabíola Góes" 
-                   class="w-full h-full object-cover" />
+            <div class="aspect-[2/3] rounded-3xl overflow-hidden bg-stone-100 border border-stone-300 shadow-2xl">
+              <img src="assets/fabiola-sobre-escritorio.jpg?v=3" 
+                   alt="Arquiteta Fabíola Góes em seu escritório em Belém" 
+                   class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105" />
             </div>
-            <div class="absolute -bottom-6 -right-6 bg-[#141615] text-[#FAF8F5] p-5 rounded-2xl border border-stone-800 shadow-2xl hidden sm:block">
+            <div class="absolute -bottom-5 -right-5 bg-[#141615] text-[#FAF8F5] p-4 sm:p-5 rounded-2xl border border-stone-800 shadow-2xl hidden sm:block">
               <div class="text-3xl font-bold text-[#C5A880]">15+ Anos</div>
               <div class="text-xs text-stone-400">De experiência no mercado</div>
             </div>
@@ -1214,34 +1303,37 @@
             <img src="assets/logo-marca-fg-dark.png" alt="Logo Fabíola Góes" class="w-12 h-12 object-contain" />
           </div>
           <span class="text-xs uppercase tracking-[0.25em] text-[#8F7450] font-bold block mb-2">SOBRE MIM</span>
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-[#141615] leading-tight mb-6">
-            Fabíola Góes
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#141615] leading-tight mb-6">
+            Fabíola Goes <span class="block text-xl sm:text-2xl font-light text-[#8F7450] mt-1.5">Arquiteta e Urbanista</span>
           </h2>
           
           <div class="space-y-4 text-stone-600 text-base leading-relaxed">
             <p>
-              Formada em <strong>Arquitetura e Urbanismo pela FAU/UFPA</strong>. Trabalhei no setor público por mais de <strong>12 anos</strong> atuando diretamente como <strong>analista de Projeto Arquitetônico Legal</strong>.
+              Arquiteta e urbanista, com mais de <strong>15 anos de experiência no setor público</strong>, especializada em <strong>regularização de imóveis, licenciamento urbano e aprovação de projetos</strong> junto às prefeituras.
             </p>
             <p>
-              Me apaixonei por essa atividade e por todo esse universo de licenciamento de obras, emissão de Alvarás de Construção, Habite-se e aprovação nos órgãos de fiscalização. Essa bagagem me permitiu dominar os trâmites que costumam travar a maioria dos projetos.
+              Possui experiência na <strong>análise de projetos</strong> e nos procedimentos técnicos e administrativos municipais, atuando na elaboração, aprovação e regularização de edificações em <strong>Belém e região metropolitana</strong>.
             </p>
             <p>
-              Hoje lidero uma equipe multidisciplinar formada por arquitetos, engenheiros, topógrafos e advogados parceiros, entregando segurança jurídica e arquitetura de alto padrão para residências, comércios e investidores em Belém e em todo o Brasil.
+              É <strong>professora de pós-graduação</strong> para arquitetos e engenheiros civis e criadora de cursos de capacitação profissional nas áreas de aprovação de projetos, licenciamento urbano e regularização de imóveis, compartilhando sua experiência prática com profissionais de todo o Brasil.
+            </p>
+            <p class="font-medium text-stone-800 border-l-2 border-[#C5A880] pl-3.5 my-2">
+              Seu trabalho une conhecimento técnico, experiência na administração pública e domínio dos processos de aprovação e regularização imobiliária.
             </p>
           </div>
 
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 pt-8 border-t border-stone-200">
             <div>
-              <div class="text-lg font-bold text-[#141615]">FAU / UFPA</div>
-              <div class="text-xs text-stone-500">Graduação em Arquitetura</div>
+              <div class="text-lg font-bold text-[#141615]">15+ Anos</div>
+              <div class="text-xs text-stone-500">Experiência no Setor Público</div>
             </div>
             <div>
-              <div class="text-lg font-bold text-[#141615]">12+ Anos</div>
-              <div class="text-xs text-stone-500">Analista no Setor Público</div>
+              <div class="text-lg font-bold text-[#141615]">Pós-Graduação</div>
+              <div class="text-xs text-stone-500">Docência para Arquitetos e Engenheiros</div>
             </div>
             <div>
-              <div class="text-lg font-bold text-[#141615]">Belém – PA</div>
-              <div class="text-xs text-stone-500">Atuação Presencial e Online</div>
+              <div class="text-lg font-bold text-[#141615]">Belém e Brasil</div>
+              <div class="text-xs text-stone-500">Consultoria e Cursos</div>
             </div>
           </div>
 
@@ -1298,8 +1390,8 @@
               </div>
               <div>
                 <span class="text-xs uppercase tracking-wider text-stone-400 font-bold block">E-mail</span>
-                <a href="mailto:projetos@fabiolagoes.com" class="text-base font-semibold text-white hover:text-[#C5A880] transition-colors">
-                  projetos@fabiolagoes.com
+                <a href="mailto:projetos@fabiolagoes.com.br" class="text-base font-semibold text-white hover:text-[#C5A880] transition-colors">
+                  projetos@fabiolagoes.com.br
                 </a>
               </div>
             </div>
@@ -1336,21 +1428,61 @@
           <!-- Redes Sociais Oficiais Únicas (Sem duplicação de faixas) -->
           <div class="pt-6 border-t border-stone-800">
             <span class="text-xs uppercase tracking-wider text-stone-400 font-bold block mb-4">REDES SOCIAIS</span>
-            <div class="flex items-center gap-3">
-              <a href="https://www.facebook.com/fabiolagoesarquitetura" target="_blank" class="w-11 h-11 rounded-full bg-stone-800 hover:bg-[#1877F2] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md group" aria-label="Facebook">
-                <i data-lucide="facebook" class="w-5 h-5"></i>
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/fabiolagoesarquitetura" target="_blank" rel="noopener noreferrer" 
+                 class="w-11 h-11 rounded-full bg-stone-800/90 border border-white/5 hover:border-[#1877F2]/50 hover:bg-[#1877F2] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md hover:scale-105 group" 
+                 aria-label="Facebook Fabíola Góes">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
               </a>
-              <a href="https://www.instagram.com/fabiolagoesarquiteta/" target="_blank" class="w-11 h-11 rounded-full bg-stone-800 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md group" aria-label="Instagram">
-                <i data-lucide="instagram" class="w-5 h-5"></i>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/fabiolagoesarquiteta/" target="_blank" rel="noopener noreferrer" 
+                 class="w-11 h-11 rounded-full bg-stone-800/90 border border-white/5 hover:border-rose-500/50 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md hover:scale-105 group" 
+                 aria-label="Instagram Fabíola Góes">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                </svg>
               </a>
-              <a href="https://wa.me/5591982324820" target="_blank" class="w-11 h-11 rounded-full bg-stone-800 hover:bg-[#25D366] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md group" aria-label="WhatsApp">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
+
+              <!-- TikTok -->
+              <a href="https://www.tiktok.com/@fabiolagoesarquiteta" target="_blank" rel="noopener noreferrer" 
+                 class="w-11 h-11 rounded-full bg-stone-800/90 border border-white/5 hover:border-cyan-400/50 hover:bg-black text-stone-300 hover:text-[#00f2fe] flex items-center justify-center transition-all shadow-md hover:scale-105 hover:shadow-[0_0_15px_rgba(0,242,254,0.3)] group" 
+                 aria-label="TikTok Fabíola Góes">
+                <svg class="w-5 h-5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.69a6.34 6.34 0 0 0 6.34 6.31 6.34 6.34 0 0 0 6.34-6.31V9.26a8.28 8.28 0 0 0 5-1.68V6.69z" />
+                </svg>
               </a>
-              <a href="https://www.youtube.com/@fabiolagoesarquiteta" target="_blank" class="w-11 h-11 rounded-full bg-stone-800 hover:bg-[#FF0000] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md group" aria-label="YouTube">
-                <i data-lucide="youtube" class="w-5 h-5"></i>
+
+
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/5591982324820" target="_blank" rel="noopener noreferrer" 
+                 class="w-11 h-11 rounded-full bg-stone-800/90 border border-white/5 hover:border-[#25D366]/50 hover:bg-[#25D366] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md hover:scale-105 group" 
+                 aria-label="WhatsApp Fabíola Góes">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.031 2c-5.507 0-9.982 4.47-9.982 9.974 0 1.764.46 3.483 1.332 4.996L2 22l5.176-1.357a9.96 9.96 0 004.855 1.258h.004c5.505 0 9.981-4.47 9.983-9.974 0-2.668-1.039-5.176-2.925-7.064A9.927 9.927 0 0012.031 2zm5.82 14.288c-.24.675-1.393 1.29-1.933 1.373-.49.074-1.13.104-1.825-.118a16.34 16.34 0 01-3.666-1.785 14.545 14.545 0 01-3.414-3.61c-.502-.705-.88-1.528-.88-2.392 0-1.11.577-1.654.782-1.884.204-.23.447-.287.596-.287.148 0 .296.002.426.008.136.007.318-.052.497.378.185.444.63 1.54.685 1.652.056.113.093.245.019.394-.075.148-.112.24-.223.37-.11.13-.232.29-.332.39-.11.11-.225.23-.097.45.128.22.57 1.012 1.348 1.704 1.002.89 1.848 1.165 2.11 1.294.262.13.415.113.57-.066.155-.179.664-.775.84-1.04.177-.265.353-.221.593-.133.24.089 1.522.718 1.782.848.26.13.434.195.498.305.064.11.064.64-.176 1.315z" clip-rule="evenodd" />
+                </svg>
               </a>
-              <a href="https://www.linkedin.com/in/fabiolagoesarquiteta/" target="_blank" class="w-11 h-11 rounded-full bg-stone-800 hover:bg-[#0A66C2] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md group" aria-label="LinkedIn">
-                <i data-lucide="linkedin" class="w-5 h-5"></i>
+
+              <!-- YouTube -->
+              <a href="https://www.youtube.com/@fabiolagoes" target="_blank" rel="noopener noreferrer" 
+                 class="w-11 h-11 rounded-full bg-stone-800/90 border border-white/5 hover:border-[#FF0000]/50 hover:bg-[#FF0000] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md hover:scale-105 group" 
+                 aria-label="YouTube Fabíola Góes">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" clip-rule="evenodd" />
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/fabiolagoesarquiteta/" target="_blank" rel="noopener noreferrer" 
+                 class="w-11 h-11 rounded-full bg-stone-800/90 border border-white/5 hover:border-[#0A66C2]/50 hover:bg-[#0A66C2] text-stone-300 hover:text-white flex items-center justify-center transition-all shadow-md hover:scale-105 group" 
+                 aria-label="LinkedIn Fabíola Góes">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                </svg>
               </a>
             </div>
           </div>
@@ -1402,12 +1534,14 @@
   <!-- ============================================================== -->
   <!-- BARRA FIXA DE CONVERSÃO MOBILE (Página 8 do PDF) -->
   <!-- ============================================================== -->
-  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#141615]/95 backdrop-blur-md border-t border-stone-800 p-3 flex items-center gap-3">
-    <a href="#orcamento" class="flex-1 bg-stone-800 text-stone-200 py-3 rounded-full text-center text-xs font-semibold hover:bg-stone-700 transition-colors">
-      Pedir Orçamento
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#141615]/95 backdrop-blur-md border-t border-stone-800 px-3 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom,12px))] flex items-center gap-2.5 shadow-2xl w-full max-w-full">
+    <a href="#orcamento" class="flex-1 min-w-0 bg-stone-800 text-stone-200 py-3 px-3 rounded-full text-center text-xs font-semibold hover:bg-stone-700 active:scale-95 transition-all shadow flex items-center justify-center gap-1.5 whitespace-nowrap overflow-hidden">
+      <span>Pedir Orçamento</span>
     </a>
-    <a href="https://wa.me/5591982324820" target="_blank" class="flex-1 bg-[#25D366] text-white py-3 rounded-full text-center text-xs font-bold flex items-center justify-center gap-1.5 shadow-lg animate-pulse-subtle">
-      <i data-lucide="message-circle" class="w-4 h-4"></i>
+    <a href="https://wa.me/5591982324820" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-0 bg-[#25D366] text-white py-3 px-3 rounded-full text-center text-xs font-bold flex items-center justify-center gap-1.5 shadow-lg active:scale-95 transition-all whitespace-nowrap overflow-hidden animate-pulse-subtle">
+      <svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill-rule="evenodd" d="M12.031 2c-5.507 0-9.982 4.47-9.982 9.974 0 1.764.46 3.483 1.332 4.996L2 22l5.176-1.357a9.96 9.96 0 004.855 1.258h.004c5.505 0 9.981-4.47 9.983-9.974 0-2.668-1.039-5.176-2.925-7.064A9.927 9.927 0 0012.031 2zm5.82 14.288c-.24.675-1.393 1.29-1.933 1.373-.49.074-1.13.104-1.825-.118a16.34 16.34 0 01-3.666-1.785 14.545 14.545 0 01-3.414-3.61c-.502-.705-.88-1.528-.88-2.392 0-1.11.577-1.654.782-1.884.204-.23.447-.287.596-.287.148 0 .296.002.426.008.136.007.318-.052.497.378.185.444.63 1.54.685 1.652.056.113.093.245.019.394-.075.148-.112.24-.223.37-.11.13-.232.29-.332.39-.11.11-.225.23-.097.45.128.22.57 1.012 1.348 1.704 1.002.89 1.848 1.165 2.11 1.294.262.13.415.113.57-.066.155-.179.664-.775.84-1.04.177-.265.353-.221.593-.133.24.089 1.522.718 1.782.848.26.13.434.195.498.305.064.11.064.64-.176 1.315z" clip-rule="evenodd" />
+      </svg>
       <span>WhatsApp</span>
     </a>
   </div>
@@ -1415,103 +1549,26 @@
   <!-- ============================================================== -->
   <!-- ============================================================== -->
   <!-- BOTÃO FLUTUANTE GLOBAL DE WHATSAPP (PÁGINAS 1 & 2 DO PDF) -->
-  <!-- "Ícone do whats em todas as páginas, pode ser?" + "mais desenhado" -->
+  <!-- "Ícone do whats em todas as páginas, pode ser?" + "mais desenhado / vazada, sem preenchimento" -->
   <!-- ============================================================== -->
   <a href="https://wa.me/5591982324820?text=Ol%C3%A1%2C%20Fab%C3%ADola!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar." 
      target="_blank" 
-     class="whatsapp-floating-btn fixed bottom-6 right-6 z-50 flex items-center gap-3 group transition-transform hover:scale-105"
+     class="whatsapp-floating-btn hidden md:flex fixed bottom-6 right-6 z-50 items-center gap-3 group transition-all duration-300 hover:scale-110 drop-shadow-[0_8px_25px_rgba(37,211,102,0.45)]"
      aria-label="Fale com a Fabíola no WhatsApp">
     
-    <span class="hidden sm:inline-block bg-[#141615]/90 text-white text-xs font-semibold px-3.5 py-1.5 rounded-full border border-white/10 shadow-2xl backdrop-blur-md group-hover:bg-[#C5A880] transition-colors">
+    <span class="hidden sm:inline-block bg-[#141615]/90 text-white text-xs font-semibold px-3.5 py-1.5 rounded-full border border-white/10 shadow-2xl backdrop-blur-md group-hover:bg-[#F97316] transition-colors">
       Fale com a Fabíola
     </span>
 
-    <div class="relative w-14 h-14 rounded-full bg-[#25D366] p-2 shadow-2xl flex items-center justify-center hover:bg-[#20BD5A] transition-all">
-      <img src="assets/whatsapp-icon-desenhado.png" alt="WhatsApp Oficial Fabíola Góes" class="w-full h-full object-contain drop-shadow" />
-      <span class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-400 border-2 border-[#141615] animate-ping"></span>
+    <!-- Ícone Vazado Oficial sem fundo sólido verde (Vazada / Linha Exata do Mockup) -->
+    <div class="relative w-16 h-16 sm:w-18 sm:h-18 flex items-center justify-center transition-transform group-hover:rotate-6 bg-transparent">
+      <img src="assets/whatsapp-vazada.png" alt="WhatsApp Oficial Fabíola Góes" class="w-full h-full object-contain filter drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]" />
+      <span class="absolute top-1 right-1 w-3 h-3 rounded-full bg-[#25D366] animate-ping"></span>
     </div>
   </a>
 
-  <!-- BOTÃO E PAINEL FLUTUANTE DE PERSONALIZAÇÃO PARA A FABÍOLA -->
-  <!-- ============================================================== -->
-  <div class="fixed bottom-20 md:bottom-6 right-6 z-50">
-    <button id="toggleCustomizerBtn" 
-            class="bg-[#141615] text-[#C5A880] border border-[#C5A880]/50 shadow-2xl px-4 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-stone-900 transition-all">
-      <i data-lucide="sliders-horizontal" class="w-4 h-4"></i>
-      <span>Ajustar Seções com a Fabíola</span>
-    </button>
-  </div>
-
-  <!-- Drawer / Painel Lateral de Controle -->
-  <div id="customizerPanel" class="customizer-panel closed fixed top-0 right-0 bottom-0 w-80 max-w-full bg-[#141615] text-[#FAF8F5] z-50 shadow-2xl border-l border-stone-800 p-6 flex flex-col justify-between overflow-y-auto">
-    <div>
-      <div class="flex items-center justify-between pb-4 border-b border-stone-800 mb-6">
-        <div>
-          <h3 class="font-bold text-sm text-white">Controle de Módulos</h3>
-          <p class="text-[11px] text-stone-400">Ative ou desative seções com 1 clique</p>
-        </div>
-        <button id="closeCustomizerBtn" class="p-1 text-stone-400 hover:text-white">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-
-      <div class="space-y-4 text-xs">
-        
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">1. Hero & Credenciais</span>
-          <input type="checkbox" id="toggleHero" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">2. Serviços Acordeão</span>
-          <input type="checkbox" id="toggleServicos" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">3. Projetos & Antes/Depois</span>
-          <input type="checkbox" id="toggleProjetos" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">4. Quiz de Regularização</span>
-          <input type="checkbox" id="toggleQuiz" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">5. Orçamento Guiado</span>
-          <input type="checkbox" id="toggleOrcamento" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">6. Como Funciona & Depoimentos</span>
-          <input type="checkbox" id="toggleComoFunciona" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">7. Área de Cursos / Profissionais</span>
-          <input type="checkbox" id="toggleProfissionais" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">8. Sobre a Arquiteta (Bio)</span>
-          <input type="checkbox" id="toggleSobre" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-        <label class="flex items-center justify-between p-2.5 rounded-xl bg-stone-900 border border-stone-800 cursor-pointer">
-          <span class="font-medium text-stone-200">9. Contato & Localização</span>
-          <input type="checkbox" id="toggleContato" checked class="accent-[#C5A880] w-4 h-4" />
-        </label>
-
-      </div>
-    </div>
-
-    <div class="pt-6 border-t border-stone-800 text-[11px] text-stone-400">
-      Permite à Fabíola testar o site sem o Quiz, sem o Orçamento ou sem a Área de Cursos em tempo real!
-    </div>
-  </div>
-
   <!-- Scripts -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
   <script>
     // Inicializa os ícones do Lucide
     lucide.createIcons();
