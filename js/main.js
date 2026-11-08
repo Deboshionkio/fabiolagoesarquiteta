@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     metragem: 180,
     prazo: 'começar em até 3 meses',
     bairro: 'Marco',
-    nome: 'Cliente'
+    nome: 'Ana Souza'
   };
 
   const updatePhoneMockup = () => {
@@ -189,7 +189,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (previewImovel) previewImovel.innerText = `${orderState.tipo} (${orderState.tipoSub}), ${orderState.metragem} m²`;
     if (previewLocal) previewLocal.innerText = `${orderState.bairro}, Belém`;
     if (previewPrazo) previewPrazo.innerText = orderState.prazo;
-    if (previewNome) previewNome.innerText = orderState.nome || 'Visitante';
+    const currentName = (orderState.nome || '').trim();
+    if (previewNome) previewNome.innerText = currentName || 'Seu Nome';
+    
+    const previewGreeting = document.getElementById('wpFabiolaGreeting');
+    if (previewGreeting) {
+      if (currentName) {
+        const firstName = currentName.split(' ')[0];
+        previewGreeting.innerText = `Oi, ${firstName}!`;
+      } else {
+        previewGreeting.innerText = 'Oi! Que bom receber seu contato.';
+      }
+    }
 
     const message = `Olá, Fabíola! Vim pelo seu site e montei meu pedido de orçamento:%0A%0A` +
       `• *Serviço:* ${orderState.servico}%0A` +
@@ -258,10 +269,45 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const nameInput = document.getElementById('orderNameInput');
+  const nameCta = document.getElementById('orderNameCta');
+
   if (nameInput) {
+    const clearAnaSouza = () => {
+      if (nameInput.value.trim() === 'Ana Souza') {
+        nameInput.value = '';
+        orderState.nome = '';
+        updatePhoneMockup();
+      }
+      if (nameCta) nameCta.style.opacity = '0';
+      nameInput.setSelectionRange(0, 0);
+    };
+
+    nameInput.addEventListener('focus', () => {
+      clearAnaSouza();
+      setTimeout(() => {
+        nameInput.setSelectionRange(0, 0);
+      }, 10);
+    });
+
+    nameInput.addEventListener('click', () => {
+      clearAnaSouza();
+    });
+
     nameInput.addEventListener('input', (e) => {
-      orderState.nome = e.target.value || 'Cliente';
+      orderState.nome = e.target.value;
+      if (nameCta) {
+        nameCta.style.opacity = e.target.value.trim() ? '0' : '1';
+      }
       updatePhoneMockup();
+    });
+
+    nameInput.addEventListener('blur', () => {
+      if (!nameInput.value.trim()) {
+        nameInput.value = 'Ana Souza';
+        orderState.nome = 'Ana Souza';
+        if (nameCta) nameCta.style.opacity = '1';
+        updatePhoneMockup();
+      }
     });
   }
 
